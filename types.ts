@@ -26,6 +26,18 @@ export enum Item {
   TalismanOfAden_9 = 'Талисман Адена +9',
   TalismanOfAden_10 = 'Талисман Адена +10',
 
+  TalismanOfEva = 'Талисман Евы',
+  TalismanOfEva_1 = 'Талисман Евы +1',
+  TalismanOfEva_2 = 'Талисман Евы +2',
+  TalismanOfEva_3 = 'Талисман Евы +3',
+  TalismanOfEva_4 = 'Талисман Евы +4',
+  TalismanOfEva_5 = 'Талисман Евы +5',
+  TalismanOfEva_6 = 'Талисман Евы +6',
+  TalismanOfEva_7 = 'Талисман Евы +7',
+  TalismanOfEva_8 = 'Талисман Евы +8',
+  TalismanOfEva_9 = 'Талисман Евы +9',
+  TalismanOfEva_10 = 'Талисман Евы +10',
+
   CloakEnchant = 'Свиток: Модифицировать Плащ',
 }
 

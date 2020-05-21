@@ -6,3 +6,6 @@ console.log(enchant(Item.Cloak, Item.Cloak_5));
 
 console.log('Талик Адена +0 => +7');
 console.log(enchant(Item.TalismanOfAden, Item.TalismanOfAden_7));
+
+console.log('Талик Евы +0 => +4');
+console.log(enchant(Item.TalismanOfEva, Item.TalismanOfEva_4));
