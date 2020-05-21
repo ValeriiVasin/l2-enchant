@@ -1,7 +1,8 @@
 import { Item } from './types';
 import { enchant } from './helpers/enchant';
 
-const from = Item.Cloak;
-const to = Item.Cloak_7;
+console.log('Плащ +0 => +5');
+console.log(enchant(Item.Cloak, Item.Cloak_5));
 
-console.log(enchant(from, to));
+console.log('Талик Адена +0 => +7');
+console.log(enchant(Item.TalismanOfAden, Item.TalismanOfAden_7));

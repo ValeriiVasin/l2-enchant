@@ -15,9 +15,19 @@ export const enchant = (from: Item, to: Item, tries = 100) => {
         (used.get(currentEnchant.required) ?? 0) + 1
       );
 
-      item = isEnchanted(currentEnchant.successRate)
-        ? currentEnchant.success
-        : currentEnchant.fail;
+      if (isEnchanted(currentEnchant.successRate)) {
+        item = currentEnchant.success;
+        continue;
+      }
+
+      item = currentEnchant.fail;
+
+      if (item !== Item.Nothing) {
+        continue;
+      }
+
+      item = from;
+      used.set(item, (used.get(item) ?? 0) + 1);
     }
   }
 

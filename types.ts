@@ -1,4 +1,7 @@
 export enum Item {
+  Nothing = 'Nothing',
+  Adena = 'Адена',
+
   Cloak = 'Плащ',
   Cloak_1 = 'Плащ +1',
   Cloak_2 = 'Плащ +2',
@@ -10,8 +13,6 @@ export enum Item {
   Cloak_8 = 'Плащ +8',
   CloakE9 = 'Плащ +9',
   Cloak_10 = 'Плащ +10',
-
-  Adena = 'Адена',
 
   TalismanOfAden = 'Талисман Адена',
   TalismanOfAden_1 = 'Талисман Адена +1',
