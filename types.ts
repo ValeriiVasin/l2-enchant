@@ -11,7 +11,7 @@ export enum Item {
   Cloak_6 = 'Плащ +6',
   Cloak_7 = 'Плащ +7',
   Cloak_8 = 'Плащ +8',
-  CloakE9 = 'Плащ +9',
+  Cloak_9 = 'Плащ +9',
   Cloak_10 = 'Плащ +10',
 
   TalismanOfAden = 'Талисман Адена',
@@ -38,6 +38,36 @@ export enum Item {
   TalismanOfEva_9 = 'Талисман Евы +9',
   TalismanOfEva_10 = 'Талисман Евы +10',
 
+  DragonEssence = 'Эссенция Дракона',
+  DragonVarnish = 'Лак Дракона',
+  DragonPendantOne = 'Подвеска Дракона Ур.1',
+  DragonPendantOne_1 = 'Подвеска Дракона Ур.1 +1',
+  DragonPendantOne_2 = 'Подвеска Дракона Ур.1 +2',
+  DragonPendantOne_3 = 'Подвеска Дракона Ур.1 +3',
+  DragonPendantOne_4 = 'Подвеска Дракона Ур.1 +4',
+  DragonPendantOne_5 = 'Подвеска Дракона Ур.1 +5',
+
+  DragonPendantTwo = 'Подвеска Дракона Ур.2',
+  DragonPendantTwo_1 = 'Подвеска Дракона Ур.2 +1',
+  DragonPendantTwo_2 = 'Подвеска Дракона Ур.2 +2',
+  DragonPendantTwo_3 = 'Подвеска Дракона Ур.2 +3',
+  DragonPendantTwo_4 = 'Подвеска Дракона Ур.2 +4',
+  DragonPendantTwo_5 = 'Подвеска Дракона Ур.2 +5',
+
+  DragonPendantThree = 'Подвеска Дракона Ур.3',
+  DragonPendantThree_1 = 'Подвеска Дракона Ур.3 +1',
+  DragonPendantThree_2 = 'Подвеска Дракона Ур.3 +2',
+  DragonPendantThree_3 = 'Подвеска Дракона Ур.3 +3',
+  DragonPendantThree_4 = 'Подвеска Дракона Ур.3 +4',
+  DragonPendantThree_5 = 'Подвеска Дракона Ур.3 +5',
+
+  DragonPendantFour = 'Подвеска Дракона Ур.4',
+  DragonPendantFour_1 = 'Подвеска Дракона Ур.4 +1',
+  DragonPendantFour_2 = 'Подвеска Дракона Ур.4 +2',
+  DragonPendantFour_3 = 'Подвеска Дракона Ур.4 +3',
+  DragonPendantFour_4 = 'Подвеска Дракона Ур.4 +4',
+  DragonPendantFour_5 = 'Подвеска Дракона Ур.4 +5',
+
   CloakEnchant = 'Свиток: Модифицировать Плащ',
 }
 
@@ -47,6 +77,11 @@ export interface Enchant {
   required: Item;
   success: Item;
   fail: Item;
+}
+
+interface CountableItem {
+  item: Item;
+  count: number;
 }
 
 export type EnchantMap = Map<Item, Enchant>;

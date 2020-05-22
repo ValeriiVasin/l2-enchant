@@ -9,3 +9,6 @@ console.log(enchant(Item.TalismanOfAden, Item.TalismanOfAden_7));
 
 console.log('Талик Евы +0 => +4');
 console.log(enchant(Item.TalismanOfEva, Item.TalismanOfEva_4));
+
+console.log('Подвеска Дракона Ур.1 +0 => +5');
+console.log(enchant(Item.DragonPendantOne, Item.DragonPendantOne_5));
