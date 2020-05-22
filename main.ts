@@ -12,3 +12,6 @@ console.log(enchant(Item.TalismanOfEva, Item.TalismanOfEva_4));
 
 console.log('Подвеска Дракона Ур.1 +0 => +5');
 console.log(enchant(Item.DragonPendantOne, Item.DragonPendantOne_5));
+
+console.log('Подвеска Дракона Ур.2 +0 => +5');
+console.log(enchant(Item.DragonPendantTwo, Item.DragonPendantTwo_5));
