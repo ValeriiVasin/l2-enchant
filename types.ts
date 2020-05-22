@@ -87,6 +87,20 @@ export enum Item {
   RadiantTalismanOfAuthority_3 = 'Искрящийся Талисман Властителя Ур.3',
   RadiantTalismanOfAuthority_4 = 'Искрящийся Талисман Властителя Ур.4',
   RadiantTalismanOfAuthority_5 = 'Искрящийся Талисман Властителя Ур.5',
+
+  Rune_1 = 'Руна Ур.1',
+  Rune_2 = 'Руна Ур.2',
+  Rune_3 = 'Руна Ур.3',
+  Rune_4 = 'Руна Ур.4',
+  Rune_5 = 'Руна Ур.5',
+  Rune_6 = 'Руна Ур.6',
+  Rune_7 = 'Руна Ур.7',
+  Rune_8 = 'Руна Ур.8',
+  Rune_9 = 'Руна Ур.9',
+  Rune_10 = 'Руна Ур.10',
+  Rune_11 = 'Руна Ур.11',
+  Rune_12 = 'Руна Ур.12',
+  Rune_13 = 'Руна Ур.13',
 }
 
 export interface Enchant {

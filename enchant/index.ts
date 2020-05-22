@@ -1,17 +1,18 @@
 import { EnchantMap } from '../types';
 import { cloakEnchantMap } from './cloak';
-import { talismanOfAdenEnchantMap } from './talisman-of-aden';
-import { talismanOfEvaEnchantMap } from './talisman-of-eva';
 import {
   dragonPendantOneEnchantMap,
-  dragonPendantTwoEnchantMap,
   dragonPendantThreeEnchantMap,
+  dragonPendantTwoEnchantMap,
 } from './dragon-pendant';
+import { runeEnchantMap } from './rune';
+import { talismanOfAdenEnchantMap } from './talisman-of-aden';
 import {
-  talismanOfAuthorityEnchantMap,
   nobleTalismanOfAuthorityEnchantMap,
   radiantTalismanOfAuthorityEnchantMap,
+  talismanOfAuthorityEnchantMap,
 } from './talisman-of-authority';
+import { talismanOfEvaEnchantMap } from './talisman-of-eva';
 
 export const enchants: EnchantMap = new Map([
   ...cloakEnchantMap,
@@ -23,4 +24,5 @@ export const enchants: EnchantMap = new Map([
   ...talismanOfAuthorityEnchantMap,
   ...nobleTalismanOfAuthorityEnchantMap,
   ...radiantTalismanOfAuthorityEnchantMap,
+  ...runeEnchantMap,
 ]);
