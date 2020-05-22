@@ -15,3 +15,6 @@ console.log(enchant(Item.DragonPendantOne, Item.DragonPendantOne_5));
 
 console.log('Подвеска Дракона Ур.2 +0 => +5');
 console.log(enchant(Item.DragonPendantTwo, Item.DragonPendantTwo_5));
+
+console.log('Подвеска Дракона Ур.3 +0 => +3');
+console.log(enchant(Item.DragonPendantThree, Item.DragonPendantThree_3));

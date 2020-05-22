@@ -5,6 +5,7 @@ import { talismanOfEvaEnchantMap } from './talisman-of-eva';
 import {
   dragonPendantOneEnchantMap,
   dragonPendantTwoEnchantMap,
+  dragonPendantThreeEnchantMap,
 } from './dragon-pendant';
 
 export const enchants: EnchantMap = new Map([
@@ -13,4 +14,5 @@ export const enchants: EnchantMap = new Map([
   ...talismanOfEvaEnchantMap,
   ...dragonPendantOneEnchantMap,
   ...dragonPendantTwoEnchantMap,
+  ...dragonPendantThreeEnchantMap,
 ]);
