@@ -2,6 +2,7 @@ export enum Item {
   Nothing = 'Nothing',
   Adena = 'Адена',
 
+  CloakEnchant = 'Свиток: Модифицировать Плащ',
   Cloak = 'Плащ',
   Cloak_1 = 'Плащ +1',
   Cloak_2 = 'Плащ +2',
@@ -68,7 +69,24 @@ export enum Item {
   DragonPendantFour_4 = 'Подвеска Дракона Ур.4 +4',
   DragonPendantFour_5 = 'Подвеска Дракона Ур.4 +5',
 
-  CloakEnchant = 'Свиток: Модифицировать Плащ',
+  TalismanOfAuthorityFragment = 'Осколок Талисмана Властителя',
+  TalismanOfAuthority_1 = 'Талисман Властителя Ур.1',
+  TalismanOfAuthority_2 = 'Талисман Властителя Ур.2',
+  TalismanOfAuthority_3 = 'Талисман Властителя Ур.3',
+  TalismanOfAuthority_4 = 'Талисман Властителя Ур.4',
+  TalismanOfAuthority_5 = 'Талисман Властителя Ур.5',
+
+  NobleTalismanOfAuthority_1 = 'Талисман Благородного Властителя Ур.1',
+  NobleTalismanOfAuthority_2 = 'Талисман Благородного Властителя Ур.2',
+  NobleTalismanOfAuthority_3 = 'Талисман Благородного Властителя Ур.3',
+  NobleTalismanOfAuthority_4 = 'Талисман Благородного Властителя Ур.4',
+  NobleTalismanOfAuthority_5 = 'Талисман Благородного Властителя Ур.5',
+
+  RadiantTalismanOfAuthority_1 = 'Искрящийся Талисман Властителя Ур.1',
+  RadiantTalismanOfAuthority_2 = 'Искрящийся Талисман Властителя Ур.2',
+  RadiantTalismanOfAuthority_3 = 'Искрящийся Талисман Властителя Ур.3',
+  RadiantTalismanOfAuthority_4 = 'Искрящийся Талисман Властителя Ур.4',
+  RadiantTalismanOfAuthority_5 = 'Искрящийся Талисман Властителя Ур.5',
 }
 
 export interface Enchant {

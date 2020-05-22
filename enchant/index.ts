@@ -7,6 +7,11 @@ import {
   dragonPendantTwoEnchantMap,
   dragonPendantThreeEnchantMap,
 } from './dragon-pendant';
+import {
+  talismanOfAuthorityEnchantMap,
+  nobleTalismanOfAuthorityEnchantMap,
+  radiantTalismanOfAuthorityEnchantMap,
+} from './talisman-of-authority';
 
 export const enchants: EnchantMap = new Map([
   ...cloakEnchantMap,
@@ -15,4 +20,7 @@ export const enchants: EnchantMap = new Map([
   ...dragonPendantOneEnchantMap,
   ...dragonPendantTwoEnchantMap,
   ...dragonPendantThreeEnchantMap,
+  ...talismanOfAuthorityEnchantMap,
+  ...nobleTalismanOfAuthorityEnchantMap,
+  ...radiantTalismanOfAuthorityEnchantMap,
 ]);
