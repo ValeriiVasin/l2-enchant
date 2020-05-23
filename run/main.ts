@@ -1,15 +1,6 @@
-import { Item } from './types';
-import { enchant } from './helpers/enchant';
-
-function header(text: string) {
-  const length = 60;
-  const header = ` ${text} `;
-  const headerLength = header.length;
-  const left = Math.floor((length - headerLength) / 2);
-  const right = length - (left + headerLength);
-
-  return `-`.repeat(left) + header + '-'.repeat(right);
-}
+import { enchant } from '../helpers/enchant';
+import { header } from '../helpers/header';
+import { Item } from '../types';
 
 console.log(header('Плащи'));
 console.log('Плащ +0 => +5');

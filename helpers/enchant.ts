@@ -2,7 +2,7 @@ import { Item } from '../types';
 import { enchants } from '../enchant';
 import { isEnchanted } from './is-enchanted';
 
-export const enchant = (from: Item, to: Item, tries = 100) => {
+export const enchant = (from: Item, to: Item, tries = 1000) => {
   const used = new Map<Item, number>();
 
   for (let i = 0; i < tries; i++) {
