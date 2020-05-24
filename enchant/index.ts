@@ -1,4 +1,5 @@
 import { EnchantMap } from '../types';
+import { agathionEnchantMap } from './agathion';
 import { cloakEnchantMap } from './cloak';
 import {
   dragonPendantOneEnchantMap,
@@ -25,4 +26,5 @@ export const enchants: EnchantMap = new Map([
   ...nobleTalismanOfAuthorityEnchantMap,
   ...radiantTalismanOfAuthorityEnchantMap,
   ...runeEnchantMap,
+  ...agathionEnchantMap,
 ]);

@@ -101,6 +101,20 @@ export enum Item {
   Rune_11 = 'Руна Ур.11',
   Rune_12 = 'Руна Ур.12',
   Rune_13 = 'Руна Ур.13',
+
+  AgathionCoupon = 'Билет Обмена Агатиона',
+  AgathionEnchantScroll = 'Свиток: Модифицировать Агатиона',
+  Agathion = 'Агатион',
+  Agathion_1 = 'Агатион +1',
+  Agathion_2 = 'Агатион +2',
+  Agathion_3 = 'Агатион +3',
+  Agathion_4 = 'Агатион +4',
+  Agathion_5 = 'Агатион +5',
+  Agathion_6 = 'Агатион +6',
+  Agathion_7 = 'Агатион +7',
+  Agathion_8 = 'Агатион +8',
+  Agathion_9 = 'Агатион +9',
+  Agathion_10 = 'Агатион +10',
 }
 
 export interface Enchant {
