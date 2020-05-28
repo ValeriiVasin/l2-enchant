@@ -20,7 +20,7 @@ const twoItems = [
   Item.DragonPendantTwo_5,
 ];
 
-const threeChances = [70, 30, 10, 5, 2];
+const threeChances = [70, 50, 30, 12, 5];
 const threeItems = [
   Item.DragonPendantThree,
   Item.DragonPendantThree_1,
