@@ -7,6 +7,7 @@ import {
   dragonPendantTwoEnchantMap,
 } from './dragon-pendant';
 import { hatEnchantMap } from './hat';
+import { heroCrownEnchantMap } from './hero-crown';
 import { runeEnchantMap } from './rune';
 import { talismanOfAdenEnchantMap } from './talisman-of-aden';
 import {
@@ -29,4 +30,5 @@ export const enchants: EnchantMap = new Map([
   ...runeEnchantMap,
   ...agathionEnchantMap,
   ...hatEnchantMap,
+  ...heroCrownEnchantMap,
 ]);
