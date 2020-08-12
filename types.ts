@@ -51,6 +51,18 @@ export enum Item {
   HeroCrown_9 = 'Венец Героя +9',
   HeroCrown_10 = 'Венец Героя +10',
 
+  DragonBelt = 'Пояс Дракона',
+  DragonBelt_1 = 'Пояс Дракона +1',
+  DragonBelt_2 = 'Пояс Дракона +2',
+  DragonBelt_3 = 'Пояс Дракона +3',
+  DragonBelt_4 = 'Пояс Дракона +4',
+  DragonBelt_5 = 'Пояс Дракона +5',
+  DragonBelt_6 = 'Пояс Дракона +6',
+  DragonBelt_7 = 'Пояс Дракона +7',
+  DragonBelt_8 = 'Пояс Дракона +8',
+  DragonBelt_9 = 'Пояс Дракона +9',
+  DragonBelt_10 = 'Пояс Дракона +10',
+
   DragonEssence = 'Эссенция Дракона',
   DragonVarnish = 'Лак Дракона',
   DragonPendantOne = 'Подвеска Дракона Ур.1',
