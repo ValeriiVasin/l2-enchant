@@ -2,6 +2,8 @@ import { enchant } from '../helpers/enchant';
 import { header } from '../helpers/header';
 import { Item } from '../types';
 
+console.log(header('Венец Героя +0 => +3'));
+console.log(enchant(Item.HeroCrown, Item.HeroCrown_3, 1000));
 console.log(header('Венец Героя +0 => +4'));
 console.log(enchant(Item.HeroCrown, Item.HeroCrown_4, 1000));
 console.log(header('Венец Героя +0 => +5'));
