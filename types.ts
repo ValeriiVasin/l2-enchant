@@ -152,6 +152,20 @@ export enum Item {
   Hat_8 = 'Головной Убор +8',
   Hat_9 = 'Головной Убор +9',
   Hat_10 = 'Головной Убор +10',
+
+  // стихийное ожерелье
+  BlessedSpiritsVarnish = 'Благословенный Лак Духов',
+  IgnisNecklace = 'Ожерелье Игниса',
+  IgnisNecklace_1 = 'Ожерелье Игниса +1',
+  IgnisNecklace_2 = 'Ожерелье Игниса +2',
+  IgnisNecklace_3 = 'Ожерелье Игниса +3',
+  IgnisNecklace_4 = 'Ожерелье Игниса +4',
+  IgnisNecklace_5 = 'Ожерелье Игниса +5',
+  IgnisNecklace_6 = 'Ожерелье Игниса +6',
+  IgnisNecklace_7 = 'Ожерелье Игниса +7',
+  IgnisNecklace_8 = 'Ожерелье Игниса +8',
+  IgnisNecklace_9 = 'Ожерелье Игниса +9',
+  IgnisNecklace_10 = 'Ожерелье Игниса +10',
 }
 
 export interface Enchant {
