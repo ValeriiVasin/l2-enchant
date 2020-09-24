@@ -33,6 +33,8 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
     used.set(item, Math.round(count / times));
   }
 
+  used.delete(Item.Nothing);
+
   return used;
 };
 
