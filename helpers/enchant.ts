@@ -7,13 +7,11 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
 
   for (let i = 0; i < times; i++) {
     let item = from;
+    inc(used, item);
 
     while (item !== to) {
       const currentEnchant = enchants.get(item)!;
-      used.set(
-        currentEnchant.required,
-        (used.get(currentEnchant.required) ?? 0) + 1
-      );
+      inc(used, currentEnchant.required);
 
       if (isEnchanted(currentEnchant.successRate)) {
         item = currentEnchant.success;
@@ -27,7 +25,7 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
       }
 
       item = from;
-      used.set(item, (used.get(item) ?? 0) + 1);
+      inc(used, item);
     }
   }
 
@@ -37,3 +35,12 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
 
   return used;
 };
+
+function inc<T>(map: Map<T, number>, key: T): void {
+  if (map.has(key)) {
+    map.set(key, map.get(key)! + 1);
+    return;
+  }
+
+  map.set(key, 1);
+}
