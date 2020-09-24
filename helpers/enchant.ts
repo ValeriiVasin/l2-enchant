@@ -2,10 +2,10 @@ import { enchants } from '../enchant';
 import { Item } from '../types';
 import { isEnchanted } from './is-enchanted';
 
-export const enchant = (from: Item, to: Item, tries = 1000) => {
+export const enchant = (from: Item, to: Item, times = 1000) => {
   const used = new Map<Item, number>();
 
-  for (let i = 0; i < tries; i++) {
+  for (let i = 0; i < times; i++) {
     let item = from;
 
     while (item !== to) {
@@ -32,7 +32,7 @@ export const enchant = (from: Item, to: Item, tries = 1000) => {
   }
 
   for (const [item, count] of used) {
-    used.set(item, Math.round(count / tries));
+    used.set(item, Math.round(count / times));
   }
 
   return used;
