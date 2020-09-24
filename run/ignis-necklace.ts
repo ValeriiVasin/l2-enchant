@@ -13,7 +13,7 @@ const enchants: Array<[number, Item]> = [
   [8, Item.IgnisNecklace_8],
 ];
 
-for (let [lvl, item] of enchants) {
+for (const [lvl, item] of enchants) {
   console.log(header(`Ожерелье Игниса +0 => +${lvl}`));
   console.log(enchant(Item.IgnisNecklace, item, 1000));
 }

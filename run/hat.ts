@@ -8,6 +8,6 @@ const enchants: Array<[number, Item]> = [
   [7, Item.Hat_7],
 ];
 
-for (let [lvl, item] of enchants) {
+for (const [lvl, item] of enchants) {
   console.log(`Головной Убор +0 => +${lvl}`, enchant(Item.Hat, item, 1000));
 }

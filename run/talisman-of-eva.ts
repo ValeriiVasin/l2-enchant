@@ -9,7 +9,7 @@ const enchants: Array<[number, Item]> = [
   [7, Item.TalismanOfEva_7],
 ];
 
-for (let [lvl, item] of enchants) {
+for (const [lvl, item] of enchants) {
   console.log(
     `Талисман Евы +0 => +${lvl}`,
     enchant(Item.TalismanOfEva, item, 1000)

@@ -1,6 +1,6 @@
 import { enchant } from '../helpers/enchant';
-import { Item } from '../types';
 import { header } from '../helpers/header';
+import { Item } from '../types';
 
 (function one() {
   const enchants: Array<[number, Item]> = [
@@ -13,7 +13,7 @@ import { header } from '../helpers/header';
 
   console.log();
   console.log(header('Подвеска Дракона Ур.1'));
-  for (let [lvl, item] of enchants) {
+  for (const [lvl, item] of enchants) {
     console.log(
       `Подвеска Дракона Ур.1 +0 => +${lvl}`,
       enchant(Item.DragonPendantOne, item, 1000)
@@ -32,7 +32,7 @@ import { header } from '../helpers/header';
 
   console.log();
   console.log(header('Подвеска Дракона Ур.2'));
-  for (let [lvl, item] of enchants) {
+  for (const [lvl, item] of enchants) {
     console.log(
       `Подвеска Дракона Ур.2 +0 => +${lvl}`,
       enchant(Item.DragonPendantTwo, item, 1000)
@@ -51,7 +51,7 @@ import { header } from '../helpers/header';
 
   console.log();
   console.log(header('Подвеска Дракона Ур.3'));
-  for (let [lvl, item] of enchants) {
+  for (const [lvl, item] of enchants) {
     console.log(
       `Подвеска Дракона Ур.3 +0 => +${lvl}`,
       enchant(Item.DragonPendantThree, item, 1000)

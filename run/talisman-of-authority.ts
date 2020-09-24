@@ -1,6 +1,6 @@
 import { enchant } from '../helpers/enchant';
-import { Item } from '../types';
 import { header } from '../helpers/header';
+import { Item } from '../types';
 
 (function one() {
   const enchants: Array<[number, Item]> = [
@@ -12,7 +12,7 @@ import { header } from '../helpers/header';
 
   console.log();
   console.log(header('Талисман Властителя'));
-  for (let [lvl, item] of enchants) {
+  for (const [lvl, item] of enchants) {
     console.log(
       `Талисман Властителя Ур.1 => Ур.${lvl}`,
       enchant(Item.TalismanOfAuthority_1, item, 1000)
@@ -30,7 +30,7 @@ import { header } from '../helpers/header';
 
   console.log();
   console.log(header('Талисман Благородного Властителя'));
-  for (let [lvl, item] of enchants) {
+  for (const [lvl, item] of enchants) {
     console.log(
       `Талисман Благородного Властителя Ур.1 => Ур.${lvl}`,
       enchant(Item.NobleTalismanOfAuthority_1, item, 1000)
@@ -48,7 +48,7 @@ import { header } from '../helpers/header';
 
   console.log();
   console.log(header('Искрящийся Талисман Властителя'));
-  for (let [lvl, item] of enchants) {
+  for (const [lvl, item] of enchants) {
     console.log(
       `Искрящийся Талисман Властителя Ур.1 => Ур.${lvl}`,
       enchant(Item.RadiantTalismanOfAuthority_1, item, 1000)

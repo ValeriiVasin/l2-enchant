@@ -14,6 +14,6 @@ const enchants: Array<[number, Item]> = [
   [10, Item.Cloak_10],
 ];
 
-for (let [lvl, item] of enchants) {
+for (const [lvl, item] of enchants) {
   console.log(`Плащ +0 => +${lvl}`, enchant(Item.Cloak, item, 1000));
 }

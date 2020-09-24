@@ -16,6 +16,6 @@ const enchants: Array<[number, Item]> = [
   [13, Item.Rune_13],
 ];
 
-for (let [lvl, item] of enchants) {
+for (const [lvl, item] of enchants) {
   console.log(`Руна Ур.1 => Руна Ур.${lvl}`, enchant(Item.Rune_1, item, 1000));
 }

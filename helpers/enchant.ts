@@ -1,5 +1,5 @@
-import { Item } from '../types';
 import { enchants } from '../enchant';
+import { Item } from '../types';
 import { isEnchanted } from './is-enchanted';
 
 export const enchant = (from: Item, to: Item, tries = 1000) => {
@@ -31,7 +31,7 @@ export const enchant = (from: Item, to: Item, tries = 1000) => {
     }
   }
 
-  for (let [item, count] of used) {
+  for (const [item, count] of used) {
     used.set(item, Math.round(count / tries));
   }
 

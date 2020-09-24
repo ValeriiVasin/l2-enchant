@@ -18,6 +18,6 @@ const enchants: Array<[number, Item]> = [
   [16, Item.BOP_16],
 ];
 
-for (let [lvl, item] of enchants) {
+for (const [lvl, item] of enchants) {
   console.log(`Лук Угрозы +0 => +${lvl}`, enchant(Item.BOP, item, 1000));
 }
