@@ -1,5 +1,5 @@
+import { enchantOrDrop } from '../helpers/strategies/enchant-or-drop';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
 
 const chances = [50, 50, 40, 40, 30, 30, 20, 10, 3, 1];
 const items = [
@@ -16,17 +16,8 @@ const items = [
   Item.IgnisNecklace_10,
 ];
 
-export const ignisNecklaceEnchantMap: EnchantMap = new Map(
-  items.slice(0, -1).map((item, index): [Item, Enchant] => {
-    return [
-      item,
-      {
-        item,
-        required: Item.BlessedSpiritsVarnish,
-        success: items[index + 1],
-        fail: Item.IgnisNecklace,
-        successRate: chances[index],
-      },
-    ];
-  })
-);
+export const ignisNecklaceEnchantMap = enchantOrDrop({
+  items,
+  chances,
+  enchantItem: Item.BlessedSpiritsVarnish,
+});
