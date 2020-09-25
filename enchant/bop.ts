@@ -1,4 +1,5 @@
-import { Enchant, EnchantMap, Item } from '../types';
+import { Item } from '../items';
+import { Enchant, EnchantMap } from '../types';
 
 const chances = [100, 100, 100, ...Array(20).fill(66.6 + 5)];
 const items = [

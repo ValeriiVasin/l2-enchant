@@ -1,5 +1,5 @@
 import { enchants } from '../enchant';
-import { Item } from '../types';
+import { Item } from '../items';
 import { isEnchanted } from './is-enchanted';
 
 export const enchant = (from: Item, to: Item, times = 1000) => {

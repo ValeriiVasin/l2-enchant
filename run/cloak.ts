@@ -1,5 +1,5 @@
 import { enchant } from '../helpers/enchant';
-import { Item } from '../types';
+import { Item } from '../items';
 
 const enchants: Array<[number, Item]> = [
   [1, Item.Cloak_1],
