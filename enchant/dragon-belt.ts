@@ -1,5 +1,5 @@
+import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
 
 const chances = [95, 90, 85, 55, 50, 40, 33, 30, 25, 15];
 const items = [
@@ -16,17 +16,4 @@ const items = [
   Item.DragonBelt_10,
 ];
 
-export const dragonBeltEnchantMap: EnchantMap = new Map(
-  items.slice(0, -1).map((item, index): [Item, Enchant] => {
-    return [
-      item,
-      {
-        item,
-        required: Item.Nothing,
-        success: items[index + 1],
-        fail: Item.Nothing,
-        successRate: chances[index],
-      },
-    ];
-  })
-);
+export const dragonBeltEnchantMap = enchantOrNothing({ items, chances });

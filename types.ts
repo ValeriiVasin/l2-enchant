@@ -9,3 +9,9 @@ export interface Enchant {
 }
 
 export type EnchantMap = Map<Item, Enchant>;
+
+export interface StrategyConfig {
+  chances: number[];
+  items: Item[];
+  enchantItem?: Item;
+}

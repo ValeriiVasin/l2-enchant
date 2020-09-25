@@ -1,5 +1,5 @@
+import { enchantOrDrop } from '../helpers/strategies/enchant-or-drop';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
 
 const chances = [70, 70, 70, 70, 70, 40, 40, 40, 40, 40, 40, 40];
 const items = [
@@ -18,15 +18,8 @@ const items = [
   Item.Rune_13,
 ];
 
-export const runeEnchantMap: EnchantMap = new Map([
-  ...items.slice(0, -1).map((item, index): [Item, Enchant] => [
-    item,
-    {
-      item,
-      required: Item.Rune_1,
-      successRate: chances[index],
-      success: items[index + 1],
-      fail: Item.Rune_1,
-    },
-  ]),
-]);
+export const runeEnchantMap = enchantOrDrop({
+  items,
+  chances,
+  enchantItem: Item.Rune_1,
+});

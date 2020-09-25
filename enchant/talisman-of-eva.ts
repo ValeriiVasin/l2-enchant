@@ -1,5 +1,5 @@
+import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
 
 const chances = [60, 50, 40, 35, 30, 28, 26, 24, 22, 20];
 const items = [
@@ -16,17 +16,4 @@ const items = [
   Item.TalismanOfEva_10,
 ];
 
-export const talismanOfEvaEnchantMap: EnchantMap = new Map(
-  items.slice(0, -1).map((item, index): [Item, Enchant] => {
-    return [
-      item,
-      {
-        item,
-        required: Item.Nothing,
-        success: items[index + 1],
-        fail: Item.Nothing,
-        successRate: chances[index],
-      },
-    ];
-  })
-);
+export const talismanOfEvaEnchantMap = enchantOrNothing({ items, chances });
