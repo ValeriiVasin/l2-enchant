@@ -1,10 +1,11 @@
 /**
- * Enchants item to next, or drops to the very first in the list
+ * Enchants item, or decrease enchant level by 1
  */
+
 import { Item } from '../../items';
 import { Enchant, EnchantMap, StrategyConfig } from '../../types';
 
-export function enchantOrDrop({
+export function enchantOrDecrease({
   items,
   chances,
   enchantItem = Item.Nothing,
@@ -17,7 +18,7 @@ export function enchantOrDrop({
           item,
           required: enchantItem,
           success: items[index + 1],
-          fail: items[0],
+          fail: items[Math.max(index - 1, 0)],
           successRate: chances[index],
         },
       ];

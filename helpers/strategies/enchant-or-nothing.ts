@@ -1,15 +1,8 @@
 /**
  * If enchant fail - you have nothing on you
  */
-
 import { Item } from '../../items';
-import { Enchant, EnchantMap } from '../../types';
-
-interface StrategyConfig {
-  chances: number[];
-  items: Item[];
-  enchantItem?: Item;
-}
+import { Enchant, EnchantMap, StrategyConfig } from '../../types';
 
 export function enchantOrNothing({
   items,

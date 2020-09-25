@@ -1,5 +1,5 @@
+import { enchantOrDecrease } from '../helpers/strategies/enchant-or-decrease';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
 
 const chances = [70, 65, 58, 42, 32, 32, 48, 28, 28, 28];
 const items = [
@@ -16,15 +16,8 @@ const items = [
   Item.Cloak_10,
 ];
 
-export const cloakEnchantMap: EnchantMap = new Map([
-  ...items.slice(0, -1).map((item, index): [Item, Enchant] => [
-    item,
-    {
-      item,
-      required: Item.CloakEnchant,
-      successRate: chances[index],
-      success: items[index + 1],
-      fail: items[Math.max(index - 1, 0)],
-    },
-  ]),
-]);
+export const cloakEnchantMap = enchantOrDecrease({
+  items,
+  chances,
+  enchantItem: Item.CloakEnchant,
+});
