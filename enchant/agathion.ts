@@ -1,5 +1,5 @@
+import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
 
 const chances = [100, 100, 100, 65, 50, 35, 12, 9, 7, 4];
 const items = [
@@ -16,17 +16,8 @@ const items = [
   Item.Agathion_10,
 ];
 
-export const agathionEnchantMap: EnchantMap = new Map(
-  items.slice(0, -1).map((item, index): [Item, Enchant] => {
-    return [
-      item,
-      {
-        item,
-        required: Item.AgathionEnchantScroll,
-        success: items[index + 1],
-        fail: Item.Nothing,
-        successRate: chances[index],
-      },
-    ];
-  })
-);
+export const agathionEnchantMap = enchantOrNothing({
+  chances,
+  items,
+  enchantItem: Item.AgathionEnchantScroll,
+});
