@@ -1,6 +1,6 @@
 import { enchant } from '../helpers/enchant';
 import { header } from '../helpers/header';
-import { Item } from '../types';
+import { Item } from '../items';
 
 console.log(header('Плащи'));
 console.log('Плащ +0 => +5');

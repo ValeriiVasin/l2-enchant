@@ -1,4 +1,5 @@
-import { Enchant, EnchantMap, Item } from '../types';
+import { Item } from '../items';
+import { Enchant, EnchantMap } from '../types';
 
 const chances = [95, 90, 85, 55, 50, 40, 33, 30, 25, 15];
 const items = [
