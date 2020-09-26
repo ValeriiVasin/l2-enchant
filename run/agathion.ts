@@ -14,6 +14,6 @@ const enchants: Array<[number, Item]> = [
 for (const [lvl, item] of enchants) {
   console.log(
     `Агатион +0 => Агатион +${lvl}`,
-    enchant(Item.Agathion, item, 1000)
+    enchant(Item.Agathion, item, 1000),
   );
 }

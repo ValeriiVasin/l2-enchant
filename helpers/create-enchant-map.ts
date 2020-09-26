@@ -41,7 +41,7 @@ export function createEnchantMap({
 function pickItemOnFail(
   items: Item[],
   index: number,
-  strategy: EnchantStrategy
+  strategy: EnchantStrategy,
 ): Item {
   switch (strategy) {
     case EnchantStrategy.Destroy:

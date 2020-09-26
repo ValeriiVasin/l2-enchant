@@ -15,7 +15,7 @@ import { Item } from '../items';
   for (const [lvl, item] of enchants) {
     console.log(
       `Талисман Властителя Ур.1 => Ур.${lvl}`,
-      enchant(Item.TalismanOfAuthority_1, item, 1000)
+      enchant(Item.TalismanOfAuthority_1, item, 1000),
     );
   }
 })();
@@ -33,7 +33,7 @@ import { Item } from '../items';
   for (const [lvl, item] of enchants) {
     console.log(
       `Талисман Благородного Властителя Ур.1 => Ур.${lvl}`,
-      enchant(Item.NobleTalismanOfAuthority_1, item, 1000)
+      enchant(Item.NobleTalismanOfAuthority_1, item, 1000),
     );
   }
 })();
@@ -51,7 +51,7 @@ import { Item } from '../items';
   for (const [lvl, item] of enchants) {
     console.log(
       `Искрящийся Талисман Властителя Ур.1 => Ур.${lvl}`,
-      enchant(Item.RadiantTalismanOfAuthority_1, item, 1000)
+      enchant(Item.RadiantTalismanOfAuthority_1, item, 1000),
     );
   }
 })();

@@ -16,7 +16,7 @@ import { Item } from '../items';
   for (const [lvl, item] of enchants) {
     console.log(
       `Подвеска Дракона Ур.1 +0 => +${lvl}`,
-      enchant(Item.DragonPendantOne, item, 1000)
+      enchant(Item.DragonPendantOne, item, 1000),
     );
   }
 })();
@@ -35,7 +35,7 @@ import { Item } from '../items';
   for (const [lvl, item] of enchants) {
     console.log(
       `Подвеска Дракона Ур.2 +0 => +${lvl}`,
-      enchant(Item.DragonPendantTwo, item, 1000)
+      enchant(Item.DragonPendantTwo, item, 1000),
     );
   }
 })();
@@ -54,7 +54,7 @@ import { Item } from '../items';
   for (const [lvl, item] of enchants) {
     console.log(
       `Подвеска Дракона Ур.3 +0 => +${lvl}`,
-      enchant(Item.DragonPendantThree, item, 1000)
+      enchant(Item.DragonPendantThree, item, 1000),
     );
   }
 })();
