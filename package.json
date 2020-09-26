@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --check '**/*/*.{ts,md,json,yml}'",
     "check-types": "tsc --noEmit",
     "start": "ts-node run/main.ts",
     "test": "jest --passWithNoTests"
@@ -16,12 +17,24 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2",
     "ts-jest": "^26.4.0",
     "ts-node": "^8.10.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

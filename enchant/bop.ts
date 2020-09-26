@@ -37,5 +37,5 @@ export const bopEnchantMap: EnchantMap = new Map(
         successRate: chances[index],
       },
     ];
-  })
+  }),
 );

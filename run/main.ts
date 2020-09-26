@@ -28,11 +28,11 @@ console.log('Талисман Властителя Ур.1 => Ур.5');
 console.log(enchant(Item.TalismanOfAuthority_1, Item.TalismanOfAuthority_5));
 console.log('Талисман Благородного Властителя Ур.1 => Ур.5');
 console.log(
-  enchant(Item.NobleTalismanOfAuthority_1, Item.NobleTalismanOfAuthority_5)
+  enchant(Item.NobleTalismanOfAuthority_1, Item.NobleTalismanOfAuthority_5),
 );
 console.log('Искрящийся Талисман Властителя Ур.1 => Ур.5');
 console.log(
-  enchant(Item.RadiantTalismanOfAuthority_1, Item.RadiantTalismanOfAuthority_5)
+  enchant(Item.RadiantTalismanOfAuthority_1, Item.RadiantTalismanOfAuthority_5),
 );
 
 console.log(header('Руны'));
