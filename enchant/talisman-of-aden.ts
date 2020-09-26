@@ -18,7 +18,7 @@ const items = [
 ];
 
 export const talismanOfAdenEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Destroy,
   items,
   chances,
-  strategy: EnchantStrategy.Destroy,
 });

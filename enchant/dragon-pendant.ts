@@ -1,7 +1,9 @@
-import { enchantOrDrop } from '../helpers/strategies/enchant-or-drop';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
-export const dragonPendantOneEnchantMap = enchantOrDrop({
+export const dragonPendantOneEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
   enchantItem: Item.DragonVarnish,
   chances: [100, 90, 80, 70, 70],
   items: [
@@ -14,7 +16,8 @@ export const dragonPendantOneEnchantMap = enchantOrDrop({
   ],
 });
 
-export const dragonPendantTwoEnchantMap = enchantOrDrop({
+export const dragonPendantTwoEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
   enchantItem: Item.DragonVarnish,
   chances: [100, 80, 70, 60, 30],
   items: [
@@ -27,7 +30,8 @@ export const dragonPendantTwoEnchantMap = enchantOrDrop({
   ],
 });
 
-export const dragonPendantThreeEnchantMap = enchantOrDrop({
+export const dragonPendantThreeEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
   enchantItem: Item.DragonVarnish,
   chances: [70, 50, 30, 12, 5],
   items: [

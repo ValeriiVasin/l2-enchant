@@ -18,8 +18,8 @@ const items = [
 ];
 
 export const hatEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Destroy,
   chances,
   items,
   enchantItem: Item.EvaScrollEnchantHairAccessory,
-  strategy: EnchantStrategy.Destroy,
 });

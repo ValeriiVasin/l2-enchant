@@ -18,8 +18,8 @@ const items = [
 ];
 
 export const agathionEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Destroy,
+  enchantItem: Item.AgathionEnchantScroll,
   chances,
   items,
-  enchantItem: Item.AgathionEnchantScroll,
-  strategy: EnchantStrategy.Destroy,
 });

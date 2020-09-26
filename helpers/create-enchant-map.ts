@@ -1,12 +1,19 @@
 import { Item } from '../items';
-import { EnchantMap, EnchantStrategy, EnchantStrategyConfig } from '../types';
+import { EnchantMap, EnchantStrategy } from '../types';
+
+interface Config {
+  strategy: EnchantStrategy;
+  chances: number[];
+  items: Item[];
+  enchantItem?: Item;
+}
 
 export function createEnchantMap({
+  strategy,
   items,
   chances,
   enchantItem = Item.Nothing,
-  strategy,
-}: EnchantStrategyConfig): EnchantMap {
+}: Config): EnchantMap {
   const result: EnchantMap = new Map();
 
   if (items.length !== chances.length + 1) {

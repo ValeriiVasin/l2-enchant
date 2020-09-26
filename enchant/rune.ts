@@ -1,5 +1,6 @@
-import { enchantOrDrop } from '../helpers/strategies/enchant-or-drop';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
 const chances = [70, 70, 70, 70, 70, 40, 40, 40, 40, 40, 40, 40];
 const items = [
@@ -18,8 +19,9 @@ const items = [
   Item.Rune_13,
 ];
 
-export const runeEnchantMap = enchantOrDrop({
+export const runeEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
+  enchantItem: Item.Rune_1,
   items,
   chances,
-  enchantItem: Item.Rune_1,
 });
