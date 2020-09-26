@@ -1,5 +1,6 @@
-import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
 const chances = [100, 100, 100, 65, 50, 35, 12, 9, 7, 4];
 const items = [
@@ -16,8 +17,9 @@ const items = [
   Item.Agathion_10,
 ];
 
-export const agathionEnchantMap = enchantOrNothing({
+export const agathionEnchantMap = createEnchantMap({
   chances,
   items,
   enchantItem: Item.AgathionEnchantScroll,
+  strategy: EnchantStrategy.Destroy,
 });

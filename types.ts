@@ -15,3 +15,13 @@ export interface StrategyConfig {
   items: Item[];
   enchantItem?: Item;
 }
+
+export enum EnchantStrategy {
+  Decrease = 'Decrease',
+  Destroy = 'Destroy',
+  Drop = 'Drop',
+}
+
+export interface EnchantStrategyConfig extends StrategyConfig {
+  strategy: EnchantStrategy;
+}

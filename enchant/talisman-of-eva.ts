@@ -1,5 +1,6 @@
-import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
 const chances = [60, 50, 40, 35, 30, 28, 26, 24, 22, 20];
 const items = [
@@ -16,4 +17,8 @@ const items = [
   Item.TalismanOfEva_10,
 ];
 
-export const talismanOfEvaEnchantMap = enchantOrNothing({ items, chances });
+export const talismanOfEvaEnchantMap = createEnchantMap({
+  items,
+  chances,
+  strategy: EnchantStrategy.Destroy,
+});
