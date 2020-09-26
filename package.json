@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "check-types": "tsc --noEmit",
     "start": "ts-node run/main.ts"
   },
   "keywords": [],
