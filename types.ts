@@ -10,8 +10,8 @@ export interface Enchant {
 
 export type EnchantMap = Map<Item, Enchant>;
 
-export interface StrategyConfig {
-  chances: number[];
-  items: Item[];
-  enchantItem?: Item;
+export enum EnchantStrategy {
+  Decrease = 'Decrease',
+  Destroy = 'Destroy',
+  Drop = 'Drop',
 }

@@ -1,5 +1,6 @@
-import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
 const chances = [95, 90, 85, 55, 50, 40, 33, 30, 25, 15];
 const items = [
@@ -16,4 +17,8 @@ const items = [
   Item.DragonBelt_10,
 ];
 
-export const dragonBeltEnchantMap = enchantOrNothing({ items, chances });
+export const dragonBeltEnchantMap = createEnchantMap({
+  items,
+  chances,
+  strategy: EnchantStrategy.Destroy,
+});

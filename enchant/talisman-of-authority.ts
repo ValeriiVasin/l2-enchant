@@ -1,7 +1,9 @@
-import { enchantOrDrop } from '../helpers/strategies/enchant-or-drop';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
-export const talismanOfAuthorityEnchantMap = enchantOrDrop({
+export const talismanOfAuthorityEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
   enchantItem: Item.TalismanOfAuthorityFragment,
   chances: [70, 60, 50, 40],
   items: [
@@ -13,7 +15,8 @@ export const talismanOfAuthorityEnchantMap = enchantOrDrop({
   ],
 });
 
-export const nobleTalismanOfAuthorityEnchantMap = enchantOrDrop({
+export const nobleTalismanOfAuthorityEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
   enchantItem: Item.TalismanOfAuthorityFragment,
   chances: [45, 35, 25, 20],
   items: [
@@ -25,7 +28,8 @@ export const nobleTalismanOfAuthorityEnchantMap = enchantOrDrop({
   ],
 });
 
-export const radiantTalismanOfAuthorityEnchantMap = enchantOrDrop({
+export const radiantTalismanOfAuthorityEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Drop,
   enchantItem: Item.TalismanOfAuthorityFragment,
   chances: [30, 25, 20, 10],
   items: [

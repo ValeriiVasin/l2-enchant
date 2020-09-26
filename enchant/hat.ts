@@ -1,5 +1,6 @@
-import { enchantOrNothing } from '../helpers/strategies/enchant-or-nothing';
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
+import { EnchantStrategy } from '../types';
 
 const chances = [100, 100, 100, 50, 40, 40, 8, 8, 5, 2];
 const items = [
@@ -16,7 +17,8 @@ const items = [
   Item.Hat_10,
 ];
 
-export const hatEnchantMap = enchantOrNothing({
+export const hatEnchantMap = createEnchantMap({
+  strategy: EnchantStrategy.Destroy,
   chances,
   items,
   enchantItem: Item.EvaScrollEnchantHairAccessory,
