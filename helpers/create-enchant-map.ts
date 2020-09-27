@@ -22,13 +22,15 @@ export function createEnchantMap({
 
   for (let i = 0; i < chances.length; i++) {
     const item = items[i];
+    const requiredItem =
+      strategy === EnchantStrategy.TwoToOne ? item : enchantItem;
     const successItem = items[i + 1];
     const failItem = pickItemOnFail(items, i, strategy);
     const chance = chances[i];
 
     result.set(item, {
       item,
-      required: enchantItem,
+      required: requiredItem,
       success: successItem,
       fail: failItem,
       successRate: chance,
@@ -50,5 +52,7 @@ function pickItemOnFail(
       return items[0];
     case EnchantStrategy.Decrease:
       return items[Math.max(index - 1, 0)];
+    case EnchantStrategy.TwoToOne:
+      return items[index];
   }
 }
