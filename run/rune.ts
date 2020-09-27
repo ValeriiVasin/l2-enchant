@@ -24,7 +24,7 @@ printNote();
 function printNote() {
   const count = 1_000_000;
   const odals = odalCount(count);
-  const ratio = (odals / count).toFixed(2);
+  const ratio = (odals / count).toFixed(3);
   console.log(
     `\n* out of ${count} runes you would get ${odals} runes you want. Ratio: ${ratio}`,
   );
