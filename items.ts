@@ -191,4 +191,15 @@ export enum Item {
   Brooch_3 = 'Брошь Ур.3',
   Brooch_4 = 'Брошь Ур.4',
   Brooch_5 = 'Брошь Ур.5',
+
+  LilithRune_1 = 'Руна Лилит Ур.1',
+  LilithRune_2 = 'Руна Лилит Ур.2',
+  LilithRune_3 = 'Руна Лилит Ур.3',
+  LilithRune_4 = 'Руна Лилит Ур.4',
+  LilithRune_5 = 'Руна Лилит Ур.5',
+  LilithRune_6 = 'Руна Лилит Ур.6',
+  LilithRune_7 = 'Руна Лилит Ур.7',
+  LilithRune_8 = 'Руна Лилит Ур.8',
+  LilithRune_9 = 'Руна Лилит Ур.9',
+  LilithRune_10 = 'Руна Лилит Ур.10',
 }

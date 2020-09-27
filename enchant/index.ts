@@ -13,6 +13,7 @@ import { hatEnchantMap } from './hat';
 import { heroCrownEnchantMap } from './hero-crown';
 import { ignisNecklaceEnchantMap } from './ignis-necklace';
 import { runeEnchantMap } from './rune';
+import { runeLilithEnchantMap } from './rune-lilith';
 import { talismanOfAdenEnchantMap } from './talisman-of-aden';
 import {
   nobleTalismanOfAuthorityEnchantMap,
@@ -39,4 +40,5 @@ export const enchants: EnchantMap = new Map([
   ...ignisNecklaceEnchantMap,
   ...bopEnchantMap,
   ...broochEnchantMap,
+  ...runeLilithEnchantMap,
 ]);
