@@ -2,7 +2,12 @@ import { enchants } from '../enchant';
 import { Item } from '../items';
 import { isEnchanted } from './is-enchanted';
 
-export const enchant = (from: Item, to: Item, times = 1000) => {
+export const enchant = (
+  from: Item,
+  to: Item,
+  times = 1000,
+  enchantMap = enchants,
+) => {
   const used = new Map<Item, number>();
 
   for (let i = 0; i < times; i++) {
@@ -10,7 +15,7 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
     inc(used, item);
 
     while (item !== to) {
-      const currentEnchant = enchants.get(item)!;
+      const currentEnchant = enchantMap.get(item)!;
       inc(used, currentEnchant.required);
 
       if (isEnchanted(currentEnchant.successRate)) {
