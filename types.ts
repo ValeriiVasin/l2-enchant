@@ -3,7 +3,7 @@ import { Item } from './items';
 export interface Enchant {
   item: Item;
   successRate: number;
-  required: Item;
+  required: Item | Map<Item, number>;
   success: Item;
   fail: Item;
 }
