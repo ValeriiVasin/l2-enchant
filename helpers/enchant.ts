@@ -1,17 +1,23 @@
 import { enchants } from '../enchant';
 import { Item } from '../items';
 import { isEnchanted } from './is-enchanted';
+import { mergeMaps } from './merge-maps';
 
-export const enchant = (from: Item, to: Item, times = 1000) => {
-  const used = new Map<Item, number>();
+export const enchant = (
+  from: Item,
+  to: Item,
+  times = 1000,
+  enchantMap = enchants,
+) => {
+  let used = new Map<Item, number>();
 
   for (let i = 0; i < times; i++) {
     let item = from;
-    inc(used, item);
+    used = inc(used, item);
 
     while (item !== to) {
-      const currentEnchant = enchants.get(item)!;
-      inc(used, currentEnchant.required);
+      const currentEnchant = enchantMap.get(item)!;
+      used = inc(used, currentEnchant.required);
 
       if (isEnchanted(currentEnchant.successRate)) {
         item = currentEnchant.success;
@@ -25,7 +31,7 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
       }
 
       item = from;
-      inc(used, item);
+      used = inc(used, item);
     }
   }
 
@@ -38,11 +44,13 @@ export const enchant = (from: Item, to: Item, times = 1000) => {
   return used;
 };
 
-function inc<T>(map: Map<T, number>, key: T): void {
-  if (map.has(key)) {
-    map.set(key, map.get(key)! + 1);
-    return;
-  }
+function isSingleItem(value: Item | Map<Item, number>): value is Item {
+  return typeof value === 'string';
+}
 
-  map.set(key, 1);
+function inc(
+  map: Map<Item, number>,
+  key: Item | Map<Item, number>,
+): Map<Item, number> {
+  return mergeMaps(map, isSingleItem(key) ? new Map([[key, 1]]) : key);
 }

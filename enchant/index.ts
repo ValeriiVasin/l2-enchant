@@ -20,6 +20,8 @@ import {
   nobleTalismanOfAuthorityEnchantMap,
   radiantTalismanOfAuthorityEnchantMap,
   talismanOfAuthorityEnchantMap,
+  upToNoble,
+  upToRadiant,
 } from './talisman-of-authority';
 import { talismanOfEvaEnchantMap } from './talisman-of-eva';
 
@@ -31,7 +33,9 @@ export const enchants: EnchantMap = new Map([
   ...dragonPendantTwoEnchantMap,
   ...dragonPendantThreeEnchantMap,
   ...talismanOfAuthorityEnchantMap,
+  ...upToNoble,
   ...nobleTalismanOfAuthorityEnchantMap,
+  ...upToRadiant,
   ...radiantTalismanOfAuthorityEnchantMap,
   ...runeEnchantMap,
   ...agathionEnchantMap,
