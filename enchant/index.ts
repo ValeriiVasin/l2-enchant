@@ -1,5 +1,9 @@
 import { EnchantMap } from '../types';
-import { agathionEnchantMap } from './agathion';
+import {
+  agathionEnchantMap,
+  highQualityAgathionEnchantMap,
+  upToHighQualityAgathion,
+} from './agathion';
 import { bopEnchantMap } from './bop';
 import { broochEnchantMap } from './brooch';
 import { cloakEnchantMap } from './cloak';
@@ -39,6 +43,8 @@ export const enchants: EnchantMap = new Map([
   ...radiantTalismanOfAuthorityEnchantMap,
   ...runeEnchantMap,
   ...agathionEnchantMap,
+  ...upToHighQualityAgathion,
+  ...highQualityAgathionEnchantMap,
   ...hatEnchantMap,
   ...heroCrownEnchantMap,
   ...dragonBeltEnchantMap,

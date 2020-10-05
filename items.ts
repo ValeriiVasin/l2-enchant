@@ -140,6 +140,21 @@ export enum Item {
   Agathion_9 = 'Агатион +9',
   Agathion_10 = 'Агатион +10',
 
+  AgathionSoulStone = 'Камень Души Агатиона',
+
+  StableScrollEnchantHighQualityAgathion = 'Стабильный Свиток Высокого Качества: Модифицировать Агатиона',
+  HighQualityAgathion = 'Агатион Высокого Качества',
+  HighQualityAgathion_1 = 'Агатион Высокого Качества +1',
+  HighQualityAgathion_2 = 'Агатион Высокого Качества +2',
+  HighQualityAgathion_3 = 'Агатион Высокого Качества +3',
+  HighQualityAgathion_4 = 'Агатион Высокого Качества +4',
+  HighQualityAgathion_5 = 'Агатион Высокого Качества +5',
+  HighQualityAgathion_6 = 'Агатион Высокого Качества +6',
+  HighQualityAgathion_7 = 'Агатион Высокого Качества +7',
+  HighQualityAgathion_8 = 'Агатион Высокого Качества +8',
+  HighQualityAgathion_9 = 'Агатион Высокого Качества +9',
+  HighQualityAgathion_10 = 'Агатион Высокого Качества +10',
+
   EvaScrollEnchantHairAccessory = 'Свиток Евы: Модифицировать Головной Убор',
   Hat = 'Головной Убор',
   Hat_1 = 'Головной Убор +1',

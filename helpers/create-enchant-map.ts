@@ -54,5 +54,7 @@ function pickItemOnFail(
       return items[Math.max(index - 1, 0)];
     case EnchantStrategy.TwoToOne:
       return items[index];
+    case EnchantStrategy.Safe:
+      return items[index];
   }
 }

@@ -22,4 +22,7 @@ export enum EnchantStrategy {
 
   // one of two items disappears in case of failure
   TwoToOne = 'TwoToOne',
+
+  // enchant, if not - item stays
+  Safe = 'Safe',
 }
