@@ -33,10 +33,11 @@ function printNote() {
 
 function odalCount(amount: number): number {
   // Odal in the first cell
-  // total possible runes => 6
-  const runes = [0, 0, 0, 0, 0, 0];
+  // total possible runes => 8
+  const total = 8;
+  const runes = [0, 0, 0, 0, 0, 0, 0, 0];
   for (let i = 0; i < amount; i++) {
-    const index = Math.floor(Math.random() * 6);
+    const index = Math.floor(Math.random() * total);
     runes[index]++;
   }
 
