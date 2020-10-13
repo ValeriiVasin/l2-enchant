@@ -231,4 +231,9 @@ export enum Item {
   ChocolateFigure_4 = 'Шоколадная Фигурка Ур.4',
   ChocolateFigure_5 = 'Шоколадная Фигурка Ур.5',
   ChocolateFigure_6 = 'Шоколадная Фигурка Ур.6',
+  ChocolateFigure_7 = 'Шоколадная Фигурка Ур.7',
+  ChocolateFigure_8 = 'Шоколадная Фигурка Ур.8',
+  ChocolateFigure_9 = 'Шоколадная Фигурка Ур.9',
+  ChocolateFigure_10 = 'Шоколадная Фигурка Ур.10',
+  ChocolateFigure_11 = 'Шоколадная Фигурка Ур.11',
 }

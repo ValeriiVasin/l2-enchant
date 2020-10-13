@@ -9,6 +9,11 @@ run(
     Item.ChocolateFigure_4,
     Item.ChocolateFigure_5,
     Item.ChocolateFigure_6,
+    Item.ChocolateFigure_7,
+    Item.ChocolateFigure_8,
+    Item.ChocolateFigure_9,
+    Item.ChocolateFigure_10,
+    Item.ChocolateFigure_11,
   ],
   10_000,
 );
