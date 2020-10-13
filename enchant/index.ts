@@ -6,6 +6,7 @@ import {
 } from './agathion';
 import { bopEnchantMap } from './bop';
 import { broochEnchantMap } from './brooch';
+import { chocolateEnchantMap } from './chocolate';
 import { cloakEnchantMap } from './cloak';
 import { dragonBeltEnchantMap } from './dragon-belt';
 import {
@@ -53,4 +54,5 @@ export const enchants: EnchantMap = new Map([
   ...broochEnchantMap,
   ...runeLilithEnchantMap,
   ...rubyEnchantMap,
+  ...chocolateEnchantMap,
 ]);
