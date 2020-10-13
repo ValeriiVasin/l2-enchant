@@ -2,6 +2,7 @@ import { run } from '../helpers/run';
 import { Item } from '../items';
 
 /**
+https://dev.l2central.info/classic/events/229.html?lang=ru
 $ npx ts-node run/chocolate.ts
 Шоколадная Фигурка Ур.1 => Шоколадная Фигурка Ур.2 Map { 'Шоколадная Фигурка Ур.1' => 1, 'Шоколад' => 2 }
 Шоколадная Фигурка Ур.1 => Шоколадная Фигурка Ур.3 Map { 'Шоколадная Фигурка Ур.1' => 1, 'Шоколад' => 6 }
