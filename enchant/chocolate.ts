@@ -29,4 +29,16 @@ export const chocolateEnchantMap = new Map([
     ],
     chances: [45, 38, 33, 28, 20],
   }),
+  ...createEnchantMap({
+    strategy: EnchantStrategy.Drop,
+    enchantItem: Item.Chocolate,
+    items: [
+      Item.ChocolateFigure_11,
+      Item.ChocolateFigure_12,
+      Item.ChocolateFigure_13,
+      Item.ChocolateFigure_14,
+      Item.ChocolateFigure_15,
+    ],
+    chances: [28, 18, 12, 7],
+  }),
 ]);
