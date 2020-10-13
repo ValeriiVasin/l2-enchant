@@ -223,4 +223,12 @@ export enum Item {
   Ruby_3 = 'Рубин Ур.3',
   Ruby_4 = 'Рубин Ур.4',
   Ruby_5 = 'Рубин Ур.5',
+
+  Chocolate = 'Шоколад',
+  ChocolateFigure_1 = 'Шоколадная Фигурка Ур.1',
+  ChocolateFigure_2 = 'Шоколадная Фигурка Ур.2',
+  ChocolateFigure_3 = 'Шоколадная Фигурка Ур.3',
+  ChocolateFigure_4 = 'Шоколадная Фигурка Ур.4',
+  ChocolateFigure_5 = 'Шоколадная Фигурка Ур.5',
+  ChocolateFigure_6 = 'Шоколадная Фигурка Ур.6',
 }
