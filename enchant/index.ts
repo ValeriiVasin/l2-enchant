@@ -9,11 +9,7 @@ import { broochEnchantMap } from './brooch';
 import { chocolateEnchantMap } from './chocolate';
 import { cloakEnchantMap } from './cloak';
 import { dragonBeltEnchantMap } from './dragon-belt';
-import {
-  dragonPendantOneEnchantMap,
-  dragonPendantThreeEnchantMap,
-  dragonPendantTwoEnchantMap,
-} from './dragon-pendant';
+import { dragonPendantEnchantMap } from './dragon-pendant';
 import { hatEnchantMap } from './hat';
 import { heroCrownEnchantMap } from './hero-crown';
 import { ignisNecklaceEnchantMap } from './ignis-necklace';
@@ -34,9 +30,7 @@ export const enchants: EnchantMap = new Map([
   ...cloakEnchantMap,
   ...talismanOfAdenEnchantMap,
   ...talismanOfEvaEnchantMap,
-  ...dragonPendantOneEnchantMap,
-  ...dragonPendantTwoEnchantMap,
-  ...dragonPendantThreeEnchantMap,
+  ...dragonPendantEnchantMap,
   ...talismanOfAuthorityEnchantMap,
   ...upToNoble,
   ...nobleTalismanOfAuthorityEnchantMap,
