@@ -14,6 +14,8 @@ run(
     Item.TalismanOfAden_6,
     Item.TalismanOfAden_7,
     Item.TalismanOfAden_8,
+    Item.TalismanOfAden_9,
+    Item.TalismanOfAden_10,
   ],
   times,
 );
