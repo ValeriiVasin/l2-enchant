@@ -4,6 +4,7 @@ import {
   highQualityAgathionEnchantMap,
   upToHighQualityAgathion,
 } from './agathion';
+import { benirEnchantMap } from './benir';
 import { bopEnchantMap } from './bop';
 import { broochEnchantMap } from './brooch';
 import { chocolateEnchantMap } from './chocolate';
@@ -49,4 +50,5 @@ export const enchants: EnchantMap = new Map([
   ...runeLilithEnchantMap,
   ...rubyEnchantMap,
   ...chocolateEnchantMap,
+  ...benirEnchantMap,
 ]);
