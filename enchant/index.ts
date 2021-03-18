@@ -15,6 +15,7 @@ import { hatEnchantMap } from './hat';
 import { heroCrownEnchantMap } from './hero-crown';
 import { ignisNecklaceEnchantMap } from './ignis-necklace';
 import { rubyEnchantMap } from './ruby';
+import { bigRubyEnchantMap } from './ruby-big';
 import { runeEnchantMap } from './rune';
 import { runeLilithEnchantMap } from './rune-lilith';
 import { talismanOfAdenEnchantMap } from './talisman-of-aden';
@@ -51,4 +52,5 @@ export const enchants: EnchantMap = new Map([
   ...rubyEnchantMap,
   ...chocolateEnchantMap,
   ...benirEnchantMap,
+  ...bigRubyEnchantMap,
 ]);
