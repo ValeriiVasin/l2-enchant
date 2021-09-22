@@ -16,36 +16,13 @@ run(
     Item.Rune_11,
     Item.Rune_12,
     Item.Rune_13,
+    Item.Rune_14,
+    Item.Rune_15,
+    Item.Rune_16,
+    Item.Rune_17,
+    Item.Rune_18,
+    Item.Rune_19,
+    Item.Rune_20,
   ],
-  1000,
+  100_000,
 );
-
-printNote();
-
-function printNote() {
-  const count = 1_000_000;
-  const odals = odalCount(count);
-  const ratio = (odals / count).toFixed(3);
-  console.log(
-    `\n* out of ${count} runes you would get ${odals} runes you want. Ratio: ${ratio}`,
-  );
-}
-
-function odalCount(amount: number): number {
-  // Odal in the first cell
-  // total possible runes => 8
-  const total = 8;
-  const runes = [0, 0, 0, 0, 0, 0, 0, 0];
-  for (let i = 0; i < amount; i++) {
-    const index = Math.floor(Math.random() * total);
-    runes[index]++;
-  }
-
-  const odals = runes[0];
-  // collapse runes back 2 runes = 1 not opened
-  const collapsed = runes
-    .slice(1)
-    .reduce((acc, amount) => acc + Math.floor(amount / 2), 0);
-
-  return collapsed === 0 ? odals : odals + odalCount(collapsed);
-}
