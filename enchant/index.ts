@@ -19,13 +19,7 @@ import { bigRubyEnchantMap } from './ruby-big';
 import { runeAdenEnchantMap } from './rune-aden';
 import { runeHardinEnchantMap } from './rune-hardin';
 import { talismanOfAdenEnchantMap } from './talisman-of-aden';
-import {
-  nobleTalismanOfAuthorityEnchantMap,
-  radiantTalismanOfAuthorityEnchantMap,
-  talismanOfAuthorityEnchantMap,
-  upToNoble,
-  upToRadiant,
-} from './talisman-of-authority';
+import { talismanOfAuthorityEnchantMap } from './talisman-of-authority';
 import { talismanOfEvaEnchantMap } from './talisman-of-eva';
 
 export const enchants: EnchantMap = new Map([
@@ -34,10 +28,6 @@ export const enchants: EnchantMap = new Map([
   ...talismanOfEvaEnchantMap,
   ...dragonPendantEnchantMap,
   ...talismanOfAuthorityEnchantMap,
-  ...upToNoble,
-  ...nobleTalismanOfAuthorityEnchantMap,
-  ...upToRadiant,
-  ...radiantTalismanOfAuthorityEnchantMap,
   ...runeAdenEnchantMap,
   ...agathionEnchantMap,
   ...upToHighQualityAgathion,

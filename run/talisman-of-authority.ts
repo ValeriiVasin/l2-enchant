@@ -1,11 +1,6 @@
-import { header } from '../helpers/header';
 import { run } from '../helpers/run';
 import { Item } from '../items';
 
-const times = 10_000;
-
-console.log();
-console.log(header('Талисман Властителя'));
 run(
   Item.TalismanOfAuthority_1,
   [
@@ -13,34 +8,21 @@ run(
     Item.TalismanOfAuthority_3,
     Item.TalismanOfAuthority_4,
     Item.TalismanOfAuthority_5,
-    Item.NobleTalismanOfAuthority_1,
+    Item.TalismanOfAuthority_6,
+    Item.TalismanOfAuthority_7,
+    Item.TalismanOfAuthority_8,
+    Item.TalismanOfAuthority_9,
+    Item.TalismanOfAuthority_10,
+    Item.TalismanOfAuthority_11,
+    Item.TalismanOfAuthority_12,
+    Item.TalismanOfAuthority_13,
+    Item.TalismanOfAuthority_14,
+    Item.TalismanOfAuthority_15,
+    Item.TalismanOfAuthority_16,
+    Item.TalismanOfAuthority_17,
+    Item.TalismanOfAuthority_18,
+    Item.TalismanOfAuthority_19,
+    Item.TalismanOfAuthority_20,
   ],
-  times,
-);
-
-console.log();
-console.log(header('Талисман Благородного Властителя'));
-run(
-  Item.NobleTalismanOfAuthority_1,
-  [
-    Item.NobleTalismanOfAuthority_2,
-    Item.NobleTalismanOfAuthority_3,
-    Item.NobleTalismanOfAuthority_4,
-    Item.NobleTalismanOfAuthority_5,
-    Item.RadiantTalismanOfAuthority_1,
-  ],
-  times,
-);
-
-console.log();
-console.log(header('Искрящийся Талисман Властителя'));
-run(
-  Item.RadiantTalismanOfAuthority_1,
-  [
-    Item.RadiantTalismanOfAuthority_2,
-    Item.RadiantTalismanOfAuthority_3,
-    Item.RadiantTalismanOfAuthority_4,
-    Item.RadiantTalismanOfAuthority_5,
-  ],
-  times,
+  100_000,
 );
