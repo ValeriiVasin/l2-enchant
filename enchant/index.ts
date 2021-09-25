@@ -16,8 +16,8 @@ import { heroCrownEnchantMap } from './hero-crown';
 import { ignisNecklaceEnchantMap } from './ignis-necklace';
 import { rubyEnchantMap } from './ruby';
 import { bigRubyEnchantMap } from './ruby-big';
-import { runeEnchantMap } from './rune';
-import { runeLilithEnchantMap } from './rune-lilith';
+import { runeAdenEnchantMap } from './rune-aden';
+import { runeHardinEnchantMap } from './rune-hardin';
 import { talismanOfAdenEnchantMap } from './talisman-of-aden';
 import {
   nobleTalismanOfAuthorityEnchantMap,
@@ -38,7 +38,7 @@ export const enchants: EnchantMap = new Map([
   ...nobleTalismanOfAuthorityEnchantMap,
   ...upToRadiant,
   ...radiantTalismanOfAuthorityEnchantMap,
-  ...runeEnchantMap,
+  ...runeAdenEnchantMap,
   ...agathionEnchantMap,
   ...upToHighQualityAgathion,
   ...highQualityAgathionEnchantMap,
@@ -48,7 +48,7 @@ export const enchants: EnchantMap = new Map([
   ...ignisNecklaceEnchantMap,
   ...bopEnchantMap,
   ...broochEnchantMap,
-  ...runeLilithEnchantMap,
+  ...runeHardinEnchantMap,
   ...rubyEnchantMap,
   ...chocolateEnchantMap,
   ...benirEnchantMap,
