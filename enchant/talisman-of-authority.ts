@@ -2,75 +2,59 @@ import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
 import { EnchantMap, EnchantStrategy } from '../types';
 
-export const talismanOfAuthorityEnchantMap = createEnchantMap({
-  strategy: EnchantStrategy.Drop,
-  enchantItem: Item.TalismanOfAuthorityFragment,
-  chances: [70, 60, 50, 40],
-  items: [
-    Item.TalismanOfAuthority_1,
-    Item.TalismanOfAuthority_2,
-    Item.TalismanOfAuthority_3,
-    Item.TalismanOfAuthority_4,
-    Item.TalismanOfAuthority_5,
-  ],
-});
+export const talismanOfAuthorityEnchantMap: EnchantMap = new Map([
+  ...createEnchantMap({
+    strategy: EnchantStrategy.Drop,
+    enchantItem: Item.TalismanOfAuthorityFragment,
+    items: [
+      Item.TalismanOfAuthority_1,
+      Item.TalismanOfAuthority_2,
+      Item.TalismanOfAuthority_3,
+      Item.TalismanOfAuthority_4,
+      Item.TalismanOfAuthority_5,
+      Item.TalismanOfAuthority_6,
+    ],
+    chances: [70, 60, 50, 40, 50],
+  }),
 
-export const upToNoble: EnchantMap = new Map([
-  [
-    Item.TalismanOfAuthority_5,
-    {
-      item: Item.TalismanOfAuthority_5,
-      required: new Map([
-        [Item.Adena, 20_000_000],
-        [Item.TalismanOfAuthorityFragment, 3],
-      ]),
-      successRate: 100,
-      success: Item.NobleTalismanOfAuthority_1,
-      // not important
-      fail: Item.Nothing,
-    },
-  ],
+  ...createEnchantMap({
+    strategy: EnchantStrategy.Drop,
+    enchantItem: Item.TalismanOfAuthorityFragment,
+    items: [
+      Item.TalismanOfAuthority_6,
+      Item.TalismanOfAuthority_7,
+      Item.TalismanOfAuthority_8,
+      Item.TalismanOfAuthority_9,
+      Item.TalismanOfAuthority_10,
+      Item.TalismanOfAuthority_11,
+    ],
+    chances: [60, 50, 40, 30, 50],
+  }),
+
+  ...createEnchantMap({
+    strategy: EnchantStrategy.Drop,
+    enchantItem: Item.TalismanOfAuthorityFragment,
+    items: [
+      Item.TalismanOfAuthority_11,
+      Item.TalismanOfAuthority_12,
+      Item.TalismanOfAuthority_13,
+      Item.TalismanOfAuthority_14,
+      Item.TalismanOfAuthority_15,
+      Item.TalismanOfAuthority_16,
+    ],
+    chances: [40, 30, 20, 15, 50],
+  }),
+
+  ...createEnchantMap({
+    strategy: EnchantStrategy.Drop,
+    enchantItem: Item.TalismanOfAuthorityFragment,
+    items: [
+      Item.TalismanOfAuthority_16,
+      Item.TalismanOfAuthority_17,
+      Item.TalismanOfAuthority_18,
+      Item.TalismanOfAuthority_19,
+      Item.TalismanOfAuthority_20,
+    ],
+    chances: [25, 20, 15, 10],
+  }),
 ]);
-
-export const nobleTalismanOfAuthorityEnchantMap = createEnchantMap({
-  strategy: EnchantStrategy.Drop,
-  enchantItem: Item.TalismanOfAuthorityFragment,
-  chances: [45, 35, 25, 20],
-  items: [
-    Item.NobleTalismanOfAuthority_1,
-    Item.NobleTalismanOfAuthority_2,
-    Item.NobleTalismanOfAuthority_3,
-    Item.NobleTalismanOfAuthority_4,
-    Item.NobleTalismanOfAuthority_5,
-  ],
-});
-
-export const upToRadiant: EnchantMap = new Map([
-  [
-    Item.NobleTalismanOfAuthority_5,
-    {
-      item: Item.NobleTalismanOfAuthority_5,
-      required: new Map([
-        [Item.Adena, 40_000_000],
-        [Item.TalismanOfAuthorityFragment, 6],
-      ]),
-      successRate: 100,
-      success: Item.RadiantTalismanOfAuthority_1,
-      // not important
-      fail: Item.Nothing,
-    },
-  ],
-]);
-
-export const radiantTalismanOfAuthorityEnchantMap = createEnchantMap({
-  strategy: EnchantStrategy.Drop,
-  enchantItem: Item.TalismanOfAuthorityFragment,
-  chances: [30, 25, 20, 10],
-  items: [
-    Item.RadiantTalismanOfAuthority_1,
-    Item.RadiantTalismanOfAuthority_2,
-    Item.RadiantTalismanOfAuthority_3,
-    Item.RadiantTalismanOfAuthority_4,
-    Item.RadiantTalismanOfAuthority_5,
-  ],
-});

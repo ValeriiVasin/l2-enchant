@@ -110,7 +110,7 @@ describe('enchanting', () => {
             [Item.Adena, 20_000_000],
             [Item.TalismanOfAuthorityFragment, 3],
           ]),
-          success: Item.NobleTalismanOfAuthority_1,
+          success: Item.TalismanOfAuthority_6,
           fail: Item.Nothing,
         },
       ],
@@ -121,7 +121,7 @@ describe('enchanting', () => {
     expect(
       enchant(
         Item.TalismanOfAuthority_5,
-        Item.NobleTalismanOfAuthority_1,
+        Item.TalismanOfAuthority_6,
         1,
         enchants,
       ),
