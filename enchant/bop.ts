@@ -1,7 +1,8 @@
+import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
-import { Enchant, EnchantMap } from '../types';
+import { EnchantStrategy } from '../types';
 
-const chances = [100, 100, 100, ...Array(20).fill(66.6 + 5)];
+const chances = [100, 100, 100, ...Array(13).fill(66.6 + 5)];
 const items = [
   Item.BOP,
   Item.BOP_1,
@@ -25,17 +26,9 @@ const items = [
 /**
  * @TODO improve Bx calculation
  */
-export const bopEnchantMap: EnchantMap = new Map(
-  items.slice(0, -1).map((item, index): [Item, Enchant] => {
-    return [
-      item,
-      {
-        item,
-        required: Item.EWB,
-        success: items[index + 1],
-        fail: Item.Nothing,
-        successRate: chances[index],
-      },
-    ];
-  }),
-);
+export const bopEnchantMap = createEnchantMap({
+  items,
+  chances,
+  enchantItem: Item.EWB,
+  strategy: EnchantStrategy.Destroy,
+});
