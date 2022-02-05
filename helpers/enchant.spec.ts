@@ -1,11 +1,10 @@
-import { mocked } from 'ts-jest/utils';
 import { Item } from '../items';
 import { EnchantMap } from '../types';
 import { enchant } from './enchant';
 import { isEnchanted } from './is-enchanted';
 
 jest.mock('./is-enchanted');
-const mockedIsEnchanted = mocked(isEnchanted);
+const mockedIsEnchanted = jest.mocked(isEnchanted);
 
 describe('enchanting', () => {
   it('simple enchant', () => {
