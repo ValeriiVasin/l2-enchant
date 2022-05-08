@@ -42,7 +42,7 @@ export const talismanOfAuthorityEnchantMap: EnchantMap = new Map([
       Item.TalismanOfAuthority_15,
       Item.TalismanOfAuthority_16,
     ],
-    chances: [40, 30, 20, 15, 50],
+    chances: [30, 25, 20, 10, 50],
   }),
 
   ...createEnchantMap({
