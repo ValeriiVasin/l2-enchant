@@ -2,7 +2,7 @@ import { Item } from '../items';
 import { EnchantMap } from '../types';
 
 // https://forums.lineage2.com/topic/10049-tower-of-insolence/?do=findComment&comment=76516
-export const talismanOfBaiumEnchantMap: EnchantMap = new Map([
+export const talismanOfInsolenceEnchantMap: EnchantMap = new Map([
   [
     Item.TalismanOfInsolence_1,
     {
