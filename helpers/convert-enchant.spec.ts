@@ -14,8 +14,8 @@ describe('convert enchant', () => {
 
     const expected: EnchantV2 = {
       item: Item.Agathion_1,
-      required: new Map([[Item.Adena, 1_000_000]]),
-      enchant: [
+      cost: new Map([[Item.Adena, 1_000_000]]),
+      results: [
         { chance: 60, item: Item.Agathion_2 },
         { chance: 40, item: Item.Agathion_1 },
       ],
