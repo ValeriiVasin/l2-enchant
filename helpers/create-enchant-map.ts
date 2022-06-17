@@ -30,10 +30,11 @@ export function createEnchantMap({
 
     result.set(item, {
       item,
-      required: requiredItem,
-      success: successItem,
-      fail: failItem,
-      successRate: chance,
+      cost: requiredItem,
+      results: [
+        { chance, item: successItem },
+        { chance: 100 - chance, item: failItem },
+      ],
     });
   }
 
