@@ -1,13 +1,7 @@
 import { enchants } from '../enchant';
 import { Item } from '../items';
-import { Enchant, EnchantV2 } from '../types';
-import { convertEnchant } from './convert-enchants';
 import { mergeMaps } from './merge-maps';
 import { pickEnchantResult } from './pick-enchant-result';
-
-function isEnchantV1(enchant: Enchant | EnchantV2): enchant is Enchant {
-  return Object.prototype.hasOwnProperty.call(enchant, 'successRate');
-}
 
 export const enchant = (
   from: Item,
@@ -23,10 +17,6 @@ export const enchant = (
 
     while (item !== to) {
       let currentEnchant = enchantMap.get(item)!;
-
-      if (isEnchantV1(currentEnchant)) {
-        currentEnchant = convertEnchant(currentEnchant);
-      }
 
       used = inc(used, currentEnchant.cost);
 

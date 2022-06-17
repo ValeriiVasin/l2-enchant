@@ -2,14 +2,6 @@ import { Item } from './items';
 
 export interface Enchant {
   item: Item;
-  successRate: number;
-  required: Item | Map<Item, number>;
-  success: Item;
-  fail: Item;
-}
-
-export interface EnchantV2 {
-  item: Item;
   cost: Item | Map<Item, number>;
   results: Array<EnchantResult>;
 }
@@ -19,7 +11,7 @@ export interface EnchantResult {
   item: Item;
 }
 
-export type EnchantMap = Map<Item, Enchant | EnchantV2>;
+export type EnchantMap = Map<Item, Enchant>;
 
 export enum EnchantStrategy {
   // enchant level is decreased by 1 in case of fail
