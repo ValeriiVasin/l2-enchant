@@ -6,14 +6,33 @@ import { isEnchanted } from './is-enchanted';
 jest.mock('./is-enchanted');
 const mockedIsEnchanted = jest.mocked(isEnchanted);
 
+// success and fails are based on the fact that
+// success item is located first in convert-enchants.ts
 describe('enchanting', () => {
+  let random: jest.SpyInstance;
+  let enchantSuccess: () => void;
+  let enchantFail: (chance: number) => void;
+
+  beforeEach(() => {
+    random = jest.spyOn(Math, 'random');
+
+    enchantSuccess = () => random.mockReturnValueOnce(0);
+    enchantFail = (chance: number) => {
+      random.mockReturnValueOnce(chance / 100);
+    };
+  });
+
+  afterEach(() => {
+    random.mockClear();
+  });
+
   it('simple enchant', () => {
     const enchants: EnchantMap = new Map([
       [
         Item.Agathion_1,
         {
           item: Item.Agathion_1,
-          successRate: 100,
+          successRate: 50,
           required: Item.AgathionEnchantScroll,
           success: Item.Agathion_2,
           fail: Item.Agathion_1,
@@ -21,7 +40,7 @@ describe('enchanting', () => {
       ],
     ]);
 
-    mockedIsEnchanted.mockReturnValue(true);
+    enchantSuccess();
     expect(enchant(Item.Agathion_1, Item.Agathion_2, 1, enchants)).toEqual(
       new Map([
         [Item.Agathion_1, 1],
@@ -36,7 +55,7 @@ describe('enchanting', () => {
         Item.Agathion_1,
         {
           item: Item.Agathion_1,
-          successRate: 100,
+          successRate: 50,
           required: Item.Nothing,
           success: Item.Agathion_2,
           fail: Item.Agathion_1,
@@ -44,7 +63,7 @@ describe('enchanting', () => {
       ],
     ]);
 
-    mockedIsEnchanted.mockReturnValue(true);
+    enchantSuccess();
     expect(enchant(Item.Agathion_1, Item.Agathion_2, 1, enchants)).toEqual(
       new Map([[Item.Agathion_1, 1]]),
     );
@@ -56,7 +75,7 @@ describe('enchanting', () => {
         Item.Agathion_1,
         {
           item: Item.Agathion_1,
-          successRate: 100,
+          successRate: 50,
           required: Item.AgathionEnchantScroll,
           success: Item.Agathion_2,
           fail: Item.Nothing,
@@ -65,7 +84,8 @@ describe('enchanting', () => {
     ]);
 
     // 1 failure, 1 success
-    mockedIsEnchanted.mockReturnValueOnce(false).mockReturnValueOnce(true);
+    enchantFail(50);
+    enchantSuccess();
 
     expect(enchant(Item.Agathion_1, Item.Agathion_2, 1, enchants)).toEqual(
       new Map([
@@ -89,7 +109,7 @@ describe('enchanting', () => {
       ],
     ]);
 
-    mockedIsEnchanted.mockReturnValue(true);
+    enchantSuccess();
     expect(enchant(Item.Agathion_1, Item.Agathion_2, 1, enchants)).toEqual(
       new Map([
         [Item.Agathion_1, 1],
@@ -115,8 +135,7 @@ describe('enchanting', () => {
       ],
     ]);
 
-    mockedIsEnchanted.mockReturnValueOnce(true);
-
+    enchantSuccess();
     expect(
       enchant(
         Item.TalismanOfAuthority_5,

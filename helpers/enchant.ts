@@ -1,14 +1,20 @@
 import { enchants } from '../enchant';
 import { Item } from '../items';
-import { isEnchanted } from './is-enchanted';
+import { Enchant, EnchantV2 } from '../types';
+import { convertEnchant } from './convert-enchants';
 import { mergeMaps } from './merge-maps';
+import { pickEnchantResult } from './pick-enchant-result';
+
+function isEnchantV1(enchant: Enchant | EnchantV2): enchant is Enchant {
+  return Object.prototype.hasOwnProperty.call(enchant, 'successRate');
+}
 
 export const enchant = (
   from: Item,
   to: Item,
   times = 1000,
   enchantMap = enchants,
-) => {
+): Map<Item, number> => {
   let used = new Map<Item, number>();
 
   for (let i = 0; i < times; i++) {
@@ -16,15 +22,16 @@ export const enchant = (
     used = inc(used, item);
 
     while (item !== to) {
-      const currentEnchant = enchantMap.get(item)!;
-      used = inc(used, currentEnchant.required);
+      let currentEnchant = enchantMap.get(item)!;
 
-      if (isEnchanted(currentEnchant.successRate)) {
-        item = currentEnchant.success;
-        continue;
+      if (isEnchantV1(currentEnchant)) {
+        currentEnchant = convertEnchant(currentEnchant);
       }
 
-      item = currentEnchant.fail;
+      used = inc(used, currentEnchant.cost);
+
+      const result = pickEnchantResult(currentEnchant.results);
+      item = result.item;
 
       if (item !== Item.Nothing) {
         continue;
