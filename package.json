@@ -1,8 +1,9 @@
 {
   "name": "l2-enchant",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enchant calculator for L2 Classic",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "check-types": "tsc --noEmit",
     "lint": "eslint '**/*.{ts,tsx,js,jsx,json,eslintrc,prettierrc}'",
@@ -10,8 +11,6 @@
     "test": "jest --passWithNoTests",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
