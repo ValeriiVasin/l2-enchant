@@ -10,5 +10,5 @@ run(
     Item.TalismanOfInsolence_5,
     Item.TalismanOfInsolence_6,
   ],
-  10_000,
+  100_000,
 );
