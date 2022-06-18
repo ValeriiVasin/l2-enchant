@@ -1,4 +1,4 @@
-import { Item } from './items';
+import type { Item } from './items';
 
 export interface Enchant {
   item: Item;

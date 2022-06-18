@@ -1,6 +1,7 @@
 import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
-import { EnchantMap, EnchantStrategy } from '../types';
+import type { EnchantMap } from '../types';
+import { EnchantStrategy } from '../types';
 
 export const runeHardinEnchantMap: EnchantMap = new Map([
   ...createEnchantMap({
@@ -45,13 +46,7 @@ export const runeHardinEnchantMap: EnchantMap = new Map([
   ...createEnchantMap({
     strategy: EnchantStrategy.Drop,
     enchantItem: Item.RuneHardin_1,
-    items: [
-      Item.RuneHardin_16,
-      Item.RuneHardin_17,
-      Item.RuneHardin_18,
-      Item.RuneHardin_19,
-      Item.RuneHardin_20,
-    ],
+    items: [Item.RuneHardin_16, Item.RuneHardin_17, Item.RuneHardin_18, Item.RuneHardin_19, Item.RuneHardin_20],
     chances: [20, 15, 10, 5],
   }),
 ]);

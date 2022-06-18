@@ -1,5 +1,5 @@
 import { Item } from '../items';
-import { EnchantResult } from '../types';
+import type { EnchantResult } from '../types';
 import { pickEnchantResult } from './pick-enchant-result';
 
 describe('pick enchant result', () => {

@@ -7,10 +7,7 @@
 import { mergeMaps } from './merge-maps';
 import { multiplyMap } from './multiply-map';
 
-export function resolveItems<T>(
-  input: Map<T, number>,
-  resolutions: Map<T, Map<T, number>>,
-): Map<T, number> {
+export function resolveItems<T>(input: Map<T, number>, resolutions: Map<T, Map<T, number>>): Map<T, number> {
   let result: Map<T, number> = new Map(input);
 
   let hasChanges = true;

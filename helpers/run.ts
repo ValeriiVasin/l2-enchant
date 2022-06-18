@@ -1,4 +1,4 @@
-import { Item } from '../items';
+import type { Item } from '../items';
 import { enchant } from './enchant';
 
 export function run(from: Item, to: Item[], times: number): void {

@@ -3,12 +3,14 @@ export function mergeMaps<T>(...maps: Array<Map<T, number>>): Map<T, number> {
 
   for (const map of maps) {
     for (const [key, value] of map) {
-      if (!result.has(key)) {
+      const resultValue = result.get(key);
+
+      if (typeof resultValue === 'undefined') {
         result.set(key, value);
         continue;
       }
 
-      result.set(key, result.get(key)! + value);
+      result.set(key, resultValue + value);
     }
   }
 

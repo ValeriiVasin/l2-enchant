@@ -1,9 +1,5 @@
-import { EnchantMap } from '../types';
-import {
-  agathionEnchantMap,
-  highQualityAgathionEnchantMap,
-  upToHighQualityAgathion,
-} from './agathion';
+import type { EnchantMap } from '../types';
+import { agathionEnchantMap, highQualityAgathionEnchantMap, upToHighQualityAgathion } from './agathion';
 import { benirEnchantMap } from './benir';
 import { bopEnchantMap } from './bop';
 import { broochEnchantMap } from './brooch';
