@@ -26,14 +26,11 @@ export const upToHighQualityAgathion: EnchantMap = new Map([
     Item.Agathion_10,
     {
       item: Item.Agathion_10,
-      required: new Map([
+      cost: new Map([
         [Item.Adena, 3_000_000],
         [Item.AgathionSoulStone, 1],
       ]),
-      successRate: 100,
-      success: Item.HighQualityAgathion,
-      // not important
-      fail: Item.Nothing,
+      results: [{ chance: 100, item: Item.HighQualityAgathion }],
     },
   ],
 ]);

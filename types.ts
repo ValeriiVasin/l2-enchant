@@ -2,10 +2,13 @@ import { Item } from './items';
 
 export interface Enchant {
   item: Item;
-  successRate: number;
-  required: Item | Map<Item, number>;
-  success: Item;
-  fail: Item;
+  cost: Item | Map<Item, number>;
+  results: Array<EnchantResult>;
+}
+
+export interface EnchantResult {
+  chance: number;
+  item: Item;
 }
 
 export type EnchantMap = Map<Item, Enchant>;

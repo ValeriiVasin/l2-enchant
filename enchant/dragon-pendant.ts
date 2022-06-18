@@ -21,11 +21,8 @@ export const dragonPendantEnchantMap = new Map([
     Item.DragonPendantOne_5,
     {
       item: Item.DragonPendantOne_5,
-      required: new Map([[Item.Adena, 12_000_000]]),
-      successRate: 100,
-      success: Item.DragonPendantTwo,
-      // not important
-      fail: Item.Nothing,
+      cost: new Map([[Item.Adena, 12_000_000]]),
+      results: [{ chance: 100, item: Item.DragonPendantTwo }],
     },
   ],
 
@@ -47,14 +44,11 @@ export const dragonPendantEnchantMap = new Map([
     Item.DragonPendantTwo_5,
     {
       item: Item.DragonPendantTwo_5,
-      required: new Map([
+      cost: new Map([
         [Item.Adena, 16_000_000],
         [Item.DragonVarnish, 3],
       ]),
-      successRate: 100,
-      success: Item.DragonPendantThree,
-      // not important
-      fail: Item.Nothing,
+      results: [{ chance: 100, item: Item.DragonPendantThree }],
     },
   ],
 

@@ -1,14 +1,14 @@
 import { enchants } from '../enchant';
 import { Item } from '../items';
-import { isEnchanted } from './is-enchanted';
 import { mergeMaps } from './merge-maps';
+import { pickEnchantResult } from './pick-enchant-result';
 
 export const enchant = (
   from: Item,
   to: Item,
   times = 1000,
   enchantMap = enchants,
-) => {
+): Map<Item, number> => {
   let used = new Map<Item, number>();
 
   for (let i = 0; i < times; i++) {
@@ -16,15 +16,12 @@ export const enchant = (
     used = inc(used, item);
 
     while (item !== to) {
-      const currentEnchant = enchantMap.get(item)!;
-      used = inc(used, currentEnchant.required);
+      let currentEnchant = enchantMap.get(item)!;
 
-      if (isEnchanted(currentEnchant.successRate)) {
-        item = currentEnchant.success;
-        continue;
-      }
+      used = inc(used, currentEnchant.cost);
 
-      item = currentEnchant.fail;
+      const result = pickEnchantResult(currentEnchant.results);
+      item = result.item;
 
       if (item !== Item.Nothing) {
         continue;

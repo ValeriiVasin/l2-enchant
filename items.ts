@@ -115,6 +115,17 @@ export enum Item {
   TalismanOfAuthority_19 = 'Талисман Властителя Ур.19',
   TalismanOfAuthority_20 = 'Талисман Властителя Ур.20',
 
+  ElementalStone = 'Камень Стихий',
+  TalismanCrystal = 'Кристалл для Талисмана',
+  EnergyOfInsolence = 'Энергия Дерзости',
+  Bx = 'Кристалл: Ранг B',
+  TalismanOfInsolence_1 = 'Талисман Дерзости Ур.1',
+  TalismanOfInsolence_2 = 'Талисман Дерзости Ур.2',
+  TalismanOfInsolence_3 = 'Талисман Дерзости Ур.3',
+  TalismanOfInsolence_4 = 'Талисман Дерзости Ур.4',
+  TalismanOfInsolence_5 = 'Талисман Дерзости Ур.5',
+  TalismanOfInsolence_6 = 'Талисман Дерзости Ур.6',
+
   RuneAden_1 = 'Кристалл Души Адена Ур.1',
   RuneAden_2 = 'Кристалл Души Адена Ур.2',
   RuneAden_3 = 'Кристалл Души Адена Ур.3',
