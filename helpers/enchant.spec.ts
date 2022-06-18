@@ -1,5 +1,5 @@
 import { Item } from '../items';
-import { EnchantMap } from '../types';
+import type { EnchantMap } from '../types';
 import { enchant } from './enchant';
 
 // success and fails are based on the fact that
@@ -62,9 +62,7 @@ describe('enchanting', () => {
     ]);
 
     enchantSuccess();
-    expect(enchant(Item.Agathion_1, Item.Agathion_2, 1, enchants)).toEqual(
-      new Map([[Item.Agathion_1, 1]]),
-    );
+    expect(enchant(Item.Agathion_1, Item.Agathion_2, 1, enchants)).toEqual(new Map([[Item.Agathion_1, 1]]));
   });
 
   it('simple failure', () => {
@@ -140,14 +138,7 @@ describe('enchanting', () => {
     ]);
 
     enchantSuccess();
-    expect(
-      enchant(
-        Item.TalismanOfAuthority_5,
-        Item.TalismanOfAuthority_6,
-        1,
-        enchants,
-      ),
-    ).toEqual(
+    expect(enchant(Item.TalismanOfAuthority_5, Item.TalismanOfAuthority_6, 1, enchants)).toEqual(
       new Map([
         [Item.TalismanOfAuthority_5, 1],
         [Item.Adena, 20_000_000],

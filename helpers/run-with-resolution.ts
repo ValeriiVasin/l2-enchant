@@ -1,9 +1,9 @@
-import { Item } from '../items';
+import type { Item } from '../items';
 import { enchant } from './enchant';
 import { resolveItems } from './resolve-items';
 
 export function runWithResolution(from: Item, to: Item[], times: number): void {
-  let resolutions: Map<Item, Map<Item, number>> = new Map();
+  const resolutions: Map<Item, Map<Item, number>> = new Map();
 
   for (const item of to) {
     const enchantResult = enchant(from, item, times);

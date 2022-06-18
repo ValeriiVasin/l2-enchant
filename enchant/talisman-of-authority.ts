@@ -1,6 +1,7 @@
 import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
-import { EnchantMap, EnchantStrategy } from '../types';
+import type { EnchantMap } from '../types';
+import { EnchantStrategy } from '../types';
 
 export const talismanOfAuthorityEnchantMap: EnchantMap = new Map([
   ...createEnchantMap({

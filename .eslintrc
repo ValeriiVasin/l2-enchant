@@ -1,7 +1,7 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier", "react-hooks"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "env": {
     "node": true
   },
@@ -13,10 +13,7 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "@typescript-eslint/consistent-type-imports": "error",
-    "no-console": "error",
-    // rule creates problems with json files
-    "no-unused-expressions": "off"
+    "@typescript-eslint/consistent-type-imports": "error"
   },
   "ignorePatterns": ["node_modules", "dist"]
 }

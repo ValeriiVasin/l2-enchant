@@ -3,12 +3,7 @@ import { Item } from '../items';
 import { mergeMaps } from './merge-maps';
 import { pickEnchantResult } from './pick-enchant-result';
 
-export const enchant = (
-  from: Item,
-  to: Item,
-  times = 1000,
-  enchantMap = enchants,
-): Map<Item, number> => {
+export const enchant = (from: Item, to: Item, times = 1000, enchantMap = enchants): Map<Item, number> => {
   let used = new Map<Item, number>();
 
   for (let i = 0; i < times; i++) {
@@ -16,7 +11,11 @@ export const enchant = (
     used = inc(used, item);
 
     while (item !== to) {
-      let currentEnchant = enchantMap.get(item)!;
+      const currentEnchant = enchantMap.get(item);
+
+      if (!currentEnchant) {
+        throw new Error(`Can not find enchant map for: ${item}`);
+      }
 
       used = inc(used, currentEnchant.cost);
 
@@ -45,9 +44,6 @@ function isSingleItem(value: Item | Map<Item, number>): value is Item {
   return typeof value === 'string';
 }
 
-function inc(
-  map: Map<Item, number>,
-  key: Item | Map<Item, number>,
-): Map<Item, number> {
+function inc(map: Map<Item, number>, key: Item | Map<Item, number>): Map<Item, number> {
   return mergeMaps(map, isSingleItem(key) ? new Map([[key, 1]]) : key);
 }
