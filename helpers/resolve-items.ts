@@ -16,10 +16,12 @@ export function resolveItems<T>(input: Map<T, number>, resolutions: Map<T, Map<T
 
     let nextResult: Map<T, number> = new Map();
     for (const [key, value] of result) {
+      console.log('key', key);
+      console.log('value', value);
       const resolved = resolutions.get(key);
 
       if (!resolved) {
-        nextResult.set(key, value);
+        nextResult.set(key, (nextResult.get(key) ?? 0) + value);
         continue;
       }
 

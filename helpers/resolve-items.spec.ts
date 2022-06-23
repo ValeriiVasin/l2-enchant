@@ -1,3 +1,4 @@
+import { Item } from '../items';
 import { resolveItems } from './resolve-items';
 
 describe('resolve items', () => {
@@ -42,5 +43,28 @@ describe('resolve items', () => {
     ]);
 
     expect(resolveItems(item, resolutions)).toEqual(new Map([['a', 23]]));
+  });
+
+  it('resolves multi-element item', () => {
+    const item = new Map([
+      [Item.Agathion_4, 2],
+      [Item.AgathionCoupon, 2],
+    ]);
+    const resolutions = new Map([
+      [
+        Item.Agathion_4,
+        new Map([
+          [Item.Agathion, 2],
+          [Item.AgathionCoupon, 6],
+        ]),
+      ],
+    ]);
+
+    expect(resolveItems(item, resolutions)).toEqual(
+      new Map([
+        [Item.Agathion, 4],
+        [Item.AgathionCoupon, 14],
+      ]),
+    );
   });
 });
