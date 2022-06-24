@@ -15,6 +15,16 @@ run(
     Item.Dye_9,
     Item.Dye_10,
     Item.Dye_11,
+
+    Item.Dye_12,
+    Item.Dye_13,
+    Item.Dye_14,
+    Item.Dye_15,
+    Item.Dye_16,
+    Item.Dye_17,
+    Item.Dye_18,
+    Item.Dye_19,
+    Item.Dye_20,
   ],
   100_000,
 );
