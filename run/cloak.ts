@@ -14,6 +14,12 @@ run(
     Item.Cloak_8,
     Item.Cloak_9,
     Item.Cloak_10,
+    Item.LegendaryCloak_10,
+    Item.LegendaryCloak_11,
+    Item.LegendaryCloak_12,
+    Item.LegendaryCloak_13,
+    Item.LegendaryCloak_14,
+    Item.LegendaryCloak_15,
   ],
   100_000,
 );
