@@ -7,6 +7,7 @@ import { chocolateEnchantMap } from './chocolate';
 import { cloakEnchantMap } from './cloak';
 import { dragonBeltEnchantMap } from './dragon-belt';
 import { dragonPendantEnchantMap } from './dragon-pendant';
+import { dyeEnchantMap } from './dye';
 import { eventDragonSlayerEnchantMap } from './event-dragon-slayer';
 import { hatEnchantMap } from './hat';
 import { heroCrownEnchantMap } from './hero-crown';
@@ -30,6 +31,7 @@ export const enchants: EnchantMap = new Map([
   ...cloakEnchantMap,
   ...dragonBeltEnchantMap,
   ...dragonPendantEnchantMap,
+  ...dyeEnchantMap,
   ...eventDragonSlayerEnchantMap,
   ...hatEnchantMap,
   ...heroCrownEnchantMap,
