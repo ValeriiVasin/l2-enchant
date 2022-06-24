@@ -32,7 +32,7 @@ export const enchant = (from: Item, to: Item, times = 1000, enchantMap = enchant
   }
 
   for (const [item, count] of used) {
-    used.set(item, Math.round(count / times));
+    used.set(item, count / times);
   }
 
   used.delete(Item.Nothing);

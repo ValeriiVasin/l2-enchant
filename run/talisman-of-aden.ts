@@ -1,8 +1,6 @@
 import { run } from '../helpers/run';
 import { Item } from '../items';
 
-const times = 10_000;
-
 run(
   Item.TalismanOfAden,
   [
@@ -17,5 +15,5 @@ run(
     Item.TalismanOfAden_9,
     Item.TalismanOfAden_10,
   ],
-  times,
+  100_000,
 );
