@@ -1,8 +1,6 @@
 import { run } from '../helpers/run';
 import { Item } from '../items';
 
-const times = 100_000;
-
 run(
   Item.DragonBelt,
   [
@@ -17,5 +15,5 @@ run(
     Item.DragonBelt_9,
     Item.DragonBelt_10,
   ],
-  times,
+  100_000,
 );

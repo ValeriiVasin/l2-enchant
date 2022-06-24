@@ -12,6 +12,8 @@ run(
     Item.IgnisNecklace_6,
     Item.IgnisNecklace_7,
     Item.IgnisNecklace_8,
+    Item.IgnisNecklace_9,
+    Item.IgnisNecklace_10,
   ],
-  10_000,
+  100_000,
 );

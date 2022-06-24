@@ -2,6 +2,7 @@ import { createEnchantMap } from '../helpers/create-enchant-map';
 import { Item } from '../items';
 import { EnchantStrategy } from '../types';
 
+// https://l2central.info/classic/items/accessary/cloaks/
 const chances = [70, 65, 58, 42, 32, 32, 48, 28, 28, 28];
 const items = [
   Item.Cloak,

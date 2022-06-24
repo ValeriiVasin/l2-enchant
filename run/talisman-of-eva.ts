@@ -14,5 +14,5 @@ run(
     Item.TalismanOfEva_9,
     Item.TalismanOfEva_10,
   ],
-  1_000_000,
+  100_000,
 );

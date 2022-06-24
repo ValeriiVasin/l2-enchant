@@ -15,5 +15,5 @@ run(
     Item.Cloak_9,
     Item.Cloak_10,
   ],
-  10_000,
+  100_000,
 );

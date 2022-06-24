@@ -12,7 +12,7 @@ run(
     Item.Agathion_9,
     Item.Agathion_10,
   ],
-  1_000_000,
+  100_000,
 );
 
 run(Item.Agathion_10, [Item.HighQualityAgathion], 1);
@@ -31,5 +31,5 @@ run(
     Item.HighQualityAgathion_9,
     Item.HighQualityAgathion_10,
   ],
-  1_000_000,
+  100_000,
 );
