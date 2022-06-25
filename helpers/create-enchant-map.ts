@@ -27,7 +27,9 @@ interface DropStrategyConfig extends BaseConfig {
   boundaries?: Set<Item>;
 }
 
-export function createEnchantMap(config: GeneralConfig | DropStrategyConfig): EnchantMap {
+export type EnchantMapConfig = GeneralConfig | DropStrategyConfig;
+
+export function createEnchantMap(config: EnchantMapConfig): EnchantMap {
   const { strategy, items, chances, enchantItem = Item.Nothing } = config;
   const result: EnchantMap = new Map();
 

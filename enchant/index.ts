@@ -1,5 +1,5 @@
-import type { EnchantMap } from '../types';
-import { agathionEnchantMap, highQualityAgathionEnchantMap, upToHighQualityAgathion } from './agathion';
+import { mergeEnchantMaps } from '../helpers/merge-enchants';
+import { agathionEnchantMap } from './agathion';
 import { benirEnchantMap } from './benir';
 import { bopEnchantMap } from './bop';
 import { broochEnchantMap } from './brooch';
@@ -21,28 +21,26 @@ import { talismanOfAuthorityEnchantMap } from './talisman-of-authority';
 import { talismanOfEvaEnchantMap } from './talisman-of-eva';
 import { talismanOfInsolenceEnchantMap } from './talisman-of-insolence';
 
-export const enchants: EnchantMap = new Map([
-  ...agathionEnchantMap,
-  ...benirEnchantMap,
-  ...rubyBigEnchantMap,
-  ...bopEnchantMap,
-  ...broochEnchantMap,
-  ...eventChocolateEnchantMap,
-  ...cloakEnchantMap,
-  ...dragonBeltEnchantMap,
-  ...dragonPendantEnchantMap,
-  ...dyeEnchantMap,
-  ...eventDragonSlayerEnchantMap,
-  ...hatEnchantMap,
-  ...heroCrownEnchantMap,
-  ...highQualityAgathionEnchantMap,
-  ...ignisNecklaceEnchantMap,
-  ...rubyEnchantMap,
-  ...runeAdenEnchantMap,
-  ...runeHardinEnchantMap,
-  ...talismanOfAdenEnchantMap,
-  ...talismanOfAuthorityEnchantMap,
-  ...talismanOfEvaEnchantMap,
-  ...talismanOfInsolenceEnchantMap,
-  ...upToHighQualityAgathion,
+export const enchants = mergeEnchantMaps([
+  agathionEnchantMap,
+  benirEnchantMap,
+  rubyBigEnchantMap,
+  bopEnchantMap,
+  broochEnchantMap,
+  eventChocolateEnchantMap,
+  cloakEnchantMap,
+  dragonBeltEnchantMap,
+  dragonPendantEnchantMap,
+  dyeEnchantMap,
+  eventDragonSlayerEnchantMap,
+  hatEnchantMap,
+  heroCrownEnchantMap,
+  ignisNecklaceEnchantMap,
+  rubyEnchantMap,
+  runeAdenEnchantMap,
+  runeHardinEnchantMap,
+  talismanOfAdenEnchantMap,
+  talismanOfAuthorityEnchantMap,
+  talismanOfEvaEnchantMap,
+  talismanOfInsolenceEnchantMap,
 ]);
