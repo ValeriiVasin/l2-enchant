@@ -1,3 +1,4 @@
+import { itemsRange } from '../helpers/items-range';
 import { run } from '../helpers/run';
 import { Item } from '../items';
 
@@ -20,23 +21,4 @@ $ npx ts-node run/chocolate.ts
 Шоколадная Фигурка Ур.1 => Шоколадная Фигурка Ур.15 Map { 'Шоколадная Фигурка Ур.1' => 1, 'Шоколад' => 3851 }
 */
 
-run(
-  Item.ChocolateFigure_1,
-  [
-    Item.ChocolateFigure_2,
-    Item.ChocolateFigure_3,
-    Item.ChocolateFigure_4,
-    Item.ChocolateFigure_5,
-    Item.ChocolateFigure_6,
-    Item.ChocolateFigure_7,
-    Item.ChocolateFigure_8,
-    Item.ChocolateFigure_9,
-    Item.ChocolateFigure_10,
-    Item.ChocolateFigure_11,
-    Item.ChocolateFigure_12,
-    Item.ChocolateFigure_13,
-    Item.ChocolateFigure_14,
-    Item.ChocolateFigure_15,
-  ],
-  100_000,
-);
+run(Item.ChocolateFigure_1, itemsRange(Item.ChocolateFigure_2, Item.ChocolateFigure_15), 100_000);

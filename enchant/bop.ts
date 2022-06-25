@@ -1,4 +1,5 @@
 import { createEnchantMap } from '../helpers/create-enchant-map';
+import { itemsRange } from '../helpers/items-range';
 import { Item } from '../items';
 import { EnchantStrategy } from '../types';
 
@@ -9,23 +10,5 @@ export const bopEnchantMap = createEnchantMap({
   strategy: EnchantStrategy.Destroy,
   enchantItem: Item.EWB,
   chances: [100, 100, 100, ...Array(13).fill(66.6 + 5)],
-  items: [
-    Item.BOP,
-    Item.BOP_1,
-    Item.BOP_2,
-    Item.BOP_3,
-    Item.BOP_4,
-    Item.BOP_5,
-    Item.BOP_6,
-    Item.BOP_7,
-    Item.BOP_8,
-    Item.BOP_9,
-    Item.BOP_10,
-    Item.BOP_11,
-    Item.BOP_12,
-    Item.BOP_13,
-    Item.BOP_14,
-    Item.BOP_15,
-    Item.BOP_16,
-  ],
+  items: itemsRange(Item.BOP, Item.BOP_16),
 });

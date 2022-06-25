@@ -1,5 +1,11 @@
 import type { Item } from './items';
 
+export interface ParsedItem {
+  base: string;
+  level: number;
+  enchant: number;
+}
+
 export interface Enchant {
   item: Item;
   cost: Item | Map<Item, number>;
