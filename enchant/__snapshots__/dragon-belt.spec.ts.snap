@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: dragon belt 1`] = `
+Map {
+  "Пояс Дракона" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона",
+    "results": Array [
+      Object {
+        "chance": 95,
+        "item": "Пояс Дракона +1",
+      },
+      Object {
+        "chance": 5,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +1" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +1",
+    "results": Array [
+      Object {
+        "chance": 90,
+        "item": "Пояс Дракона +2",
+      },
+      Object {
+        "chance": 10,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +2" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +2",
+    "results": Array [
+      Object {
+        "chance": 85,
+        "item": "Пояс Дракона +3",
+      },
+      Object {
+        "chance": 15,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +3" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +3",
+    "results": Array [
+      Object {
+        "chance": 55,
+        "item": "Пояс Дракона +4",
+      },
+      Object {
+        "chance": 45,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +4" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +4",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Пояс Дракона +5",
+      },
+      Object {
+        "chance": 50,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +5" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +5",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Пояс Дракона +6",
+      },
+      Object {
+        "chance": 60,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +6" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +6",
+    "results": Array [
+      Object {
+        "chance": 33,
+        "item": "Пояс Дракона +7",
+      },
+      Object {
+        "chance": 67,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +7" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +7",
+    "results": Array [
+      Object {
+        "chance": 30,
+        "item": "Пояс Дракона +8",
+      },
+      Object {
+        "chance": 70,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +8" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +8",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Пояс Дракона +9",
+      },
+      Object {
+        "chance": 75,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Пояс Дракона +9" => Object {
+    "cost": "Nothing",
+    "item": "Пояс Дракона +9",
+    "results": Array [
+      Object {
+        "chance": 15,
+        "item": "Пояс Дракона +10",
+      },
+      Object {
+        "chance": 85,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;

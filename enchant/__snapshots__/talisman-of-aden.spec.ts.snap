@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: talisman of aden 1`] = `
+Map {
+  "Талисман Адена" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Талисман Адена +1",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +1" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +1",
+    "results": Array [
+      Object {
+        "chance": 80,
+        "item": "Талисман Адена +2",
+      },
+      Object {
+        "chance": 20,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +2" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +2",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Талисман Адена +3",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +3" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +3",
+    "results": Array [
+      Object {
+        "chance": 60,
+        "item": "Талисман Адена +4",
+      },
+      Object {
+        "chance": 40,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +4" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +4",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Талисман Адена +5",
+      },
+      Object {
+        "chance": 60,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +5" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +5",
+    "results": Array [
+      Object {
+        "chance": 30,
+        "item": "Талисман Адена +6",
+      },
+      Object {
+        "chance": 70,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +6" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +6",
+    "results": Array [
+      Object {
+        "chance": 24,
+        "item": "Талисман Адена +7",
+      },
+      Object {
+        "chance": 76,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +7" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +7",
+    "results": Array [
+      Object {
+        "chance": 16,
+        "item": "Талисман Адена +8",
+      },
+      Object {
+        "chance": 84,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +8" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +8",
+    "results": Array [
+      Object {
+        "chance": 10,
+        "item": "Талисман Адена +9",
+      },
+      Object {
+        "chance": 90,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Талисман Адена +9" => Object {
+    "cost": "Nothing",
+    "item": "Талисман Адена +9",
+    "results": Array [
+      Object {
+        "chance": 10,
+        "item": "Талисман Адена +10",
+      },
+      Object {
+        "chance": 90,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;

@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: hero crown 1`] = `
+Map {
+  "Венец Героя" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя",
+    "results": Array [
+      Object {
+        "chance": 60,
+        "item": "Венец Героя +1",
+      },
+      Object {
+        "chance": 40,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +1" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +1",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Венец Героя +2",
+      },
+      Object {
+        "chance": 50,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +2" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +2",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Венец Героя +3",
+      },
+      Object {
+        "chance": 60,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +3" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +3",
+    "results": Array [
+      Object {
+        "chance": 35,
+        "item": "Венец Героя +4",
+      },
+      Object {
+        "chance": 65,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +4" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +4",
+    "results": Array [
+      Object {
+        "chance": 30,
+        "item": "Венец Героя +5",
+      },
+      Object {
+        "chance": 70,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +5" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +5",
+    "results": Array [
+      Object {
+        "chance": 28,
+        "item": "Венец Героя +6",
+      },
+      Object {
+        "chance": 72,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +6" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +6",
+    "results": Array [
+      Object {
+        "chance": 26,
+        "item": "Венец Героя +7",
+      },
+      Object {
+        "chance": 74,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +7" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +7",
+    "results": Array [
+      Object {
+        "chance": 24,
+        "item": "Венец Героя +8",
+      },
+      Object {
+        "chance": 76,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +8" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +8",
+    "results": Array [
+      Object {
+        "chance": 22,
+        "item": "Венец Героя +9",
+      },
+      Object {
+        "chance": 78,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Венец Героя +9" => Object {
+    "cost": "Nothing",
+    "item": "Венец Героя +9",
+    "results": Array [
+      Object {
+        "chance": 20,
+        "item": "Венец Героя +10",
+      },
+      Object {
+        "chance": 80,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;

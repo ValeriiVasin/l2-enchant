@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: hat 1`] = `
+Map {
+  "Головной Убор" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Головной Убор +1",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +1" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +1",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Головной Убор +2",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +2" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +2",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Головной Убор +3",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +3" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +3",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Головной Убор +4",
+      },
+      Object {
+        "chance": 50,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +4" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +4",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Головной Убор +5",
+      },
+      Object {
+        "chance": 60,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +5" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +5",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Головной Убор +6",
+      },
+      Object {
+        "chance": 60,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +6" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +6",
+    "results": Array [
+      Object {
+        "chance": 8,
+        "item": "Головной Убор +7",
+      },
+      Object {
+        "chance": 92,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +7" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +7",
+    "results": Array [
+      Object {
+        "chance": 8,
+        "item": "Головной Убор +8",
+      },
+      Object {
+        "chance": 92,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +8" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +8",
+    "results": Array [
+      Object {
+        "chance": 5,
+        "item": "Головной Убор +9",
+      },
+      Object {
+        "chance": 95,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Головной Убор +9" => Object {
+    "cost": "Свиток Евы: Модифицировать Головной Убор",
+    "item": "Головной Убор +9",
+    "results": Array [
+      Object {
+        "chance": 2,
+        "item": "Головной Убор +10",
+      },
+      Object {
+        "chance": 98,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;

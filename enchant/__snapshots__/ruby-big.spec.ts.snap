@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: ruby big 1`] = `
+Map {
+  "Большой Рубин Ур.1" => Object {
+    "cost": "Энергия Самоцвета",
+    "item": "Большой Рубин Ур.1",
+    "results": Array [
+      Object {
+        "chance": 35,
+        "item": "Большой Рубин Ур.2",
+      },
+      Object {
+        "chance": 65,
+        "item": "Большой Рубин Ур.1",
+      },
+    ],
+  },
+  "Большой Рубин Ур.2" => Object {
+    "cost": "Энергия Самоцвета",
+    "item": "Большой Рубин Ур.2",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Большой Рубин Ур.3",
+      },
+      Object {
+        "chance": 75,
+        "item": "Большой Рубин Ур.1",
+      },
+    ],
+  },
+  "Большой Рубин Ур.3" => Object {
+    "cost": "Энергия Самоцвета",
+    "item": "Большой Рубин Ур.3",
+    "results": Array [
+      Object {
+        "chance": 15,
+        "item": "Большой Рубин Ур.4",
+      },
+      Object {
+        "chance": 85,
+        "item": "Большой Рубин Ур.1",
+      },
+    ],
+  },
+  "Большой Рубин Ур.4" => Object {
+    "cost": "Энергия Самоцвета",
+    "item": "Большой Рубин Ур.4",
+    "results": Array [
+      Object {
+        "chance": 10,
+        "item": "Большой Рубин Ур.5",
+      },
+      Object {
+        "chance": 90,
+        "item": "Большой Рубин Ур.1",
+      },
+    ],
+  },
+}
+`;

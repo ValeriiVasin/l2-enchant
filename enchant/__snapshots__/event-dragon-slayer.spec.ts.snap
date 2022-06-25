@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: event-dragon-slayer 1`] = `
+Map {
+  "Меч Убийца Драконов" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Меч Убийца Драконов +1",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +1" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +1",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Меч Убийца Драконов +2",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +2" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +2",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Меч Убийца Драконов +3",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +3" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +3",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +4",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +4" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +4",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +5",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +5" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +5",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +6",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +6" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +6",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +7",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +7" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +7",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +8",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +8" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +8",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +9",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +9" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +9",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +10",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +10" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +10",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +11",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +11" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +11",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +12",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +12" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +12",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +13",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +13" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +13",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +14",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Меч Убийца Драконов +14" => Object {
+    "cost": "Свиток Модификации Убийц Драконов",
+    "item": "Меч Убийца Драконов +14",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Меч Убийца Драконов +15",
+      },
+      Object {
+        "chance": 30,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;
