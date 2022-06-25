@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: brooch 1`] = `
+Map {
+  "Брошь Ур.1" => Object {
+    "cost": "Брошь Ур.1",
+    "item": "Брошь Ур.1",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.2",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.1",
+      },
+    ],
+  },
+  "Брошь Ур.2" => Object {
+    "cost": "Брошь Ур.2",
+    "item": "Брошь Ур.2",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.3",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.2",
+      },
+    ],
+  },
+  "Брошь Ур.3" => Object {
+    "cost": "Брошь Ур.3",
+    "item": "Брошь Ур.3",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.4",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.3",
+      },
+    ],
+  },
+  "Брошь Ур.4" => Object {
+    "cost": "Брошь Ур.4",
+    "item": "Брошь Ур.4",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.5",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.4",
+      },
+    ],
+  },
+}
+`;

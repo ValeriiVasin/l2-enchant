@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: agathion 1`] = `
+Map {
+  "Агатион" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Агатион +1",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +1" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +1",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Агатион +2",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +2" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +2",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Агатион +3",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +3" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +3",
+    "results": Array [
+      Object {
+        "chance": 65,
+        "item": "Агатион +4",
+      },
+      Object {
+        "chance": 35,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +4" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +4",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Агатион +5",
+      },
+      Object {
+        "chance": 50,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +5" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +5",
+    "results": Array [
+      Object {
+        "chance": 35,
+        "item": "Агатион +6",
+      },
+      Object {
+        "chance": 65,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +6" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +6",
+    "results": Array [
+      Object {
+        "chance": 12,
+        "item": "Агатион +7",
+      },
+      Object {
+        "chance": 88,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +7" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +7",
+    "results": Array [
+      Object {
+        "chance": 9,
+        "item": "Агатион +8",
+      },
+      Object {
+        "chance": 91,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +8" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +8",
+    "results": Array [
+      Object {
+        "chance": 7,
+        "item": "Агатион +9",
+      },
+      Object {
+        "chance": 93,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Агатион +9" => Object {
+    "cost": "Свиток: Модифицировать Агатиона",
+    "item": "Агатион +9",
+    "results": Array [
+      Object {
+        "chance": 4,
+        "item": "Агатион +10",
+      },
+      Object {
+        "chance": 96,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;

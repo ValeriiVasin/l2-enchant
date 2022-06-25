@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: bop 1`] = `
+Map {
+  "Лук Угрозы" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Лук Угрозы +1",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +1" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +1",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Лук Угрозы +2",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +2" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +2",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Лук Угрозы +3",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +3" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +3",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +4",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +4" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +4",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +5",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +5" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +5",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +6",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +6" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +6",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +7",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +7" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +7",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +8",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +8" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +8",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +9",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +9" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +9",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +10",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +10" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +10",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +11",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +11" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +11",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +12",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +12" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +12",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +13",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +13" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +13",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +14",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +14" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +14",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +15",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +15" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +15",
+    "results": Array [
+      Object {
+        "chance": 71.6,
+        "item": "Лук Угрозы +16",
+      },
+      Object {
+        "chance": 28.400000000000006,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;

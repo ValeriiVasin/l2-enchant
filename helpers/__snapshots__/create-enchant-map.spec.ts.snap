@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create enchant map Decrease strategy 1`] = `
+Map {
+  "Плащ" => Object {
+    "cost": "Свиток: Модифицировать Плащ",
+    "item": "Плащ",
+    "results": Array [
+      Object {
+        "chance": 70,
+        "item": "Плащ +1",
+      },
+      Object {
+        "chance": 30,
+        "item": "Плащ",
+      },
+    ],
+  },
+  "Плащ +1" => Object {
+    "cost": "Свиток: Модифицировать Плащ",
+    "item": "Плащ +1",
+    "results": Array [
+      Object {
+        "chance": 65,
+        "item": "Плащ +2",
+      },
+      Object {
+        "chance": 35,
+        "item": "Плащ",
+      },
+    ],
+  },
+  "Плащ +2" => Object {
+    "cost": "Свиток: Модифицировать Плащ",
+    "item": "Плащ +2",
+    "results": Array [
+      Object {
+        "chance": 58,
+        "item": "Плащ +3",
+      },
+      Object {
+        "chance": 42,
+        "item": "Плащ +1",
+      },
+    ],
+  },
+}
+`;
+
+exports[`create enchant map Destroy strategy 1`] = `
+Map {
+  "Лук Угрозы" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Лук Угрозы +1",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +1" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +1",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Лук Угрозы +2",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +2" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +2",
+    "results": Array [
+      Object {
+        "chance": 100,
+        "item": "Лук Угрозы +3",
+      },
+      Object {
+        "chance": 0,
+        "item": "Nothing",
+      },
+    ],
+  },
+  "Лук Угрозы +3" => Object {
+    "cost": "Свиток: Модифицировать Оружие (Ранг B)",
+    "item": "Лук Угрозы +3",
+    "results": Array [
+      Object {
+        "chance": 66,
+        "item": "Лук Угрозы +4",
+      },
+      Object {
+        "chance": 34,
+        "item": "Nothing",
+      },
+    ],
+  },
+}
+`;
+
+exports[`create enchant map Drop strategy drops to boundaries 1`] = `
+Map {
+  "Талисман Бенира Ур.1" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.1",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.2",
+      },
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.2" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.2",
+    "results": Array [
+      Object {
+        "chance": 45,
+        "item": "Талисман Бенира Ур.3",
+      },
+      Object {
+        "chance": 55,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.3" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.3",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Талисман Бенира Ур.4",
+      },
+      Object {
+        "chance": 60,
+        "item": "Талисман Бенира Ур.3",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.4" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.4",
+    "results": Array [
+      Object {
+        "chance": 35,
+        "item": "Талисман Бенира Ур.5",
+      },
+      Object {
+        "chance": 65,
+        "item": "Талисман Бенира Ур.3",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.5" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.5",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.6",
+      },
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.5",
+      },
+    ],
+  },
+}
+`;
+
+exports[`create enchant map Drop strategy drops to first element 1`] = `
+Map {
+  "Талисман Бенира Ур.1" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.1",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.2",
+      },
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.2" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.2",
+    "results": Array [
+      Object {
+        "chance": 45,
+        "item": "Талисман Бенира Ур.3",
+      },
+      Object {
+        "chance": 55,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.3" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.3",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Талисман Бенира Ур.4",
+      },
+      Object {
+        "chance": 60,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.4" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.4",
+    "results": Array [
+      Object {
+        "chance": 35,
+        "item": "Талисман Бенира Ур.5",
+      },
+      Object {
+        "chance": 65,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.5" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.5",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.6",
+      },
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+}
+`;
+
+exports[`create enchant map Safe strategy 1`] = `
+Map {
+  "Легендарный Плащ +10" => Object {
+    "cost": "Стабильный Свиток: Модифицировать Легендарный Плащ",
+    "item": "Легендарный Плащ +10",
+    "results": Array [
+      Object {
+        "chance": 28,
+        "item": "Легендарный Плащ +11",
+      },
+      Object {
+        "chance": 72,
+        "item": "Легендарный Плащ +10",
+      },
+    ],
+  },
+  "Легендарный Плащ +11" => Object {
+    "cost": "Стабильный Свиток: Модифицировать Легендарный Плащ",
+    "item": "Легендарный Плащ +11",
+    "results": Array [
+      Object {
+        "chance": 28,
+        "item": "Легендарный Плащ +12",
+      },
+      Object {
+        "chance": 72,
+        "item": "Легендарный Плащ +11",
+      },
+    ],
+  },
+  "Легендарный Плащ +12" => Object {
+    "cost": "Стабильный Свиток: Модифицировать Легендарный Плащ",
+    "item": "Легендарный Плащ +12",
+    "results": Array [
+      Object {
+        "chance": 48,
+        "item": "Легендарный Плащ +13",
+      },
+      Object {
+        "chance": 52,
+        "item": "Легендарный Плащ +12",
+      },
+    ],
+  },
+  "Легендарный Плащ +13" => Object {
+    "cost": "Стабильный Свиток: Модифицировать Легендарный Плащ",
+    "item": "Легендарный Плащ +13",
+    "results": Array [
+      Object {
+        "chance": 48,
+        "item": "Легендарный Плащ +14",
+      },
+      Object {
+        "chance": 52,
+        "item": "Легендарный Плащ +13",
+      },
+    ],
+  },
+  "Легендарный Плащ +14" => Object {
+    "cost": "Стабильный Свиток: Модифицировать Легендарный Плащ",
+    "item": "Легендарный Плащ +14",
+    "results": Array [
+      Object {
+        "chance": 20,
+        "item": "Легендарный Плащ +15",
+      },
+      Object {
+        "chance": 80,
+        "item": "Легендарный Плащ +14",
+      },
+    ],
+  },
+}
+`;
+
+exports[`create enchant map TwoToOne strategy 1`] = `
+Map {
+  "Брошь Ур.1" => Object {
+    "cost": "Брошь Ур.1",
+    "item": "Брошь Ур.1",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.2",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.1",
+      },
+    ],
+  },
+  "Брошь Ур.2" => Object {
+    "cost": "Брошь Ур.2",
+    "item": "Брошь Ур.2",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.3",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.2",
+      },
+    ],
+  },
+  "Брошь Ур.3" => Object {
+    "cost": "Брошь Ур.3",
+    "item": "Брошь Ур.3",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.4",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.3",
+      },
+    ],
+  },
+  "Брошь Ур.4" => Object {
+    "cost": "Брошь Ур.4",
+    "item": "Брошь Ур.4",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Брошь Ур.5",
+      },
+      Object {
+        "chance": 75,
+        "item": "Брошь Ур.4",
+      },
+    ],
+  },
+}
+`;

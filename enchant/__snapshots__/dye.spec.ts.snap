@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: dye 1`] = `
+Map {
+  "Узор" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Узор Ур.1",
+      },
+      Object {
+        "chance": 50,
+        "item": "Узор",
+      },
+    ],
+  },
+  "Узор Ур.1" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.1",
+    "results": Array [
+      Object {
+        "chance": 25,
+        "item": "Узор Ур.2",
+      },
+      Object {
+        "chance": 75,
+        "item": "Узор Ур.1",
+      },
+    ],
+  },
+  "Узор Ур.2" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.2",
+    "results": Array [
+      Object {
+        "chance": 20,
+        "item": "Узор Ур.3",
+      },
+      Object {
+        "chance": 80,
+        "item": "Узор Ур.2",
+      },
+    ],
+  },
+  "Узор Ур.3" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.3",
+    "results": Array [
+      Object {
+        "chance": 15,
+        "item": "Узор Ур.4",
+      },
+      Object {
+        "chance": 85,
+        "item": "Узор Ур.3",
+      },
+    ],
+  },
+  "Узор Ур.4" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.4",
+    "results": Array [
+      Object {
+        "chance": 10,
+        "item": "Узор Ур.5",
+      },
+      Object {
+        "chance": 90,
+        "item": "Узор Ур.4",
+      },
+    ],
+  },
+  "Узор Ур.5" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.5",
+    "results": Array [
+      Object {
+        "chance": 8,
+        "item": "Узор Ур.6",
+      },
+      Object {
+        "chance": 92,
+        "item": "Узор Ур.5",
+      },
+    ],
+  },
+  "Узор Ур.6" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.6",
+    "results": Array [
+      Object {
+        "chance": 6,
+        "item": "Узор Ур.7",
+      },
+      Object {
+        "chance": 94,
+        "item": "Узор Ур.6",
+      },
+    ],
+  },
+  "Узор Ур.7" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.7",
+    "results": Array [
+      Object {
+        "chance": 5,
+        "item": "Узор Ур.8",
+      },
+      Object {
+        "chance": 95,
+        "item": "Узор Ур.7",
+      },
+    ],
+  },
+  "Узор Ур.8" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.8",
+    "results": Array [
+      Object {
+        "chance": 5,
+        "item": "Узор Ур.9",
+      },
+      Object {
+        "chance": 95,
+        "item": "Узор Ур.8",
+      },
+    ],
+  },
+  "Узор Ур.9" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.9",
+    "results": Array [
+      Object {
+        "chance": 5,
+        "item": "Узор Ур.10",
+      },
+      Object {
+        "chance": 95,
+        "item": "Узор Ур.9",
+      },
+    ],
+  },
+  "Узор Ур.10" => Object {
+    "cost": "Красящий Порошок",
+    "item": "Узор Ур.10",
+    "results": Array [
+      Object {
+        "chance": 5,
+        "item": "Узор Ур.11",
+      },
+      Object {
+        "chance": 95,
+        "item": "Узор Ур.10",
+      },
+    ],
+  },
+  "Узор Ур.11" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.11",
+    "results": Array [
+      Object {
+        "chance": 10,
+        "item": "Узор Ур.12",
+      },
+      Object {
+        "chance": 90,
+        "item": "Узор Ур.11",
+      },
+    ],
+  },
+  "Узор Ур.12" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.12",
+    "results": Array [
+      Object {
+        "chance": 8,
+        "item": "Узор Ур.13",
+      },
+      Object {
+        "chance": 92,
+        "item": "Узор Ур.12",
+      },
+    ],
+  },
+  "Узор Ур.13" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.13",
+    "results": Array [
+      Object {
+        "chance": 6,
+        "item": "Узор Ур.14",
+      },
+      Object {
+        "chance": 94,
+        "item": "Узор Ур.13",
+      },
+    ],
+  },
+  "Узор Ур.14" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.14",
+    "results": Array [
+      Object {
+        "chance": 5,
+        "item": "Узор Ур.15",
+      },
+      Object {
+        "chance": 95,
+        "item": "Узор Ур.14",
+      },
+    ],
+  },
+  "Узор Ур.15" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.15",
+    "results": Array [
+      Object {
+        "chance": 4,
+        "item": "Узор Ур.16",
+      },
+      Object {
+        "chance": 96,
+        "item": "Узор Ур.15",
+      },
+    ],
+  },
+  "Узор Ур.16" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.16",
+    "results": Array [
+      Object {
+        "chance": 3,
+        "item": "Узор Ур.17",
+      },
+      Object {
+        "chance": 97,
+        "item": "Узор Ур.16",
+      },
+    ],
+  },
+  "Узор Ур.17" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.17",
+    "results": Array [
+      Object {
+        "chance": 2,
+        "item": "Узор Ур.18",
+      },
+      Object {
+        "chance": 98,
+        "item": "Узор Ур.17",
+      },
+    ],
+  },
+  "Узор Ур.18" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.18",
+    "results": Array [
+      Object {
+        "chance": 1.5,
+        "item": "Узор Ур.19",
+      },
+      Object {
+        "chance": 98.5,
+        "item": "Узор Ур.18",
+      },
+    ],
+  },
+  "Узор Ур.19" => Object {
+    "cost": "Улучшенный Красящий Порошок",
+    "item": "Узор Ур.19",
+    "results": Array [
+      Object {
+        "chance": 0.5,
+        "item": "Узор Ур.20",
+      },
+      Object {
+        "chance": 99.5,
+        "item": "Узор Ур.19",
+      },
+    ],
+  },
+}
+`;

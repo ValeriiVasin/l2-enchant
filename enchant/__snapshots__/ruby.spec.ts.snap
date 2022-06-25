@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enchant map: ruby 1`] = `
+Map {
+  "Рубин Ур.1" => Object {
+    "cost": "Рубин Ур.1",
+    "item": "Рубин Ур.1",
+    "results": Array [
+      Object {
+        "chance": 65,
+        "item": "Рубин Ур.2",
+      },
+      Object {
+        "chance": 35,
+        "item": "Рубин Ур.1",
+      },
+    ],
+  },
+  "Рубин Ур.2" => Object {
+    "cost": "Рубин Ур.2",
+    "item": "Рубин Ур.2",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Рубин Ур.3",
+      },
+      Object {
+        "chance": 60,
+        "item": "Рубин Ур.2",
+      },
+    ],
+  },
+  "Рубин Ур.3" => Object {
+    "cost": "Рубин Ур.3",
+    "item": "Рубин Ур.3",
+    "results": Array [
+      Object {
+        "chance": 20,
+        "item": "Рубин Ур.4",
+      },
+      Object {
+        "chance": 80,
+        "item": "Рубин Ур.3",
+      },
+    ],
+  },
+  "Рубин Ур.4" => Object {
+    "cost": "Рубин Ур.4",
+    "item": "Рубин Ур.4",
+    "results": Array [
+      Object {
+        "chance": 10,
+        "item": "Рубин Ур.5",
+      },
+      Object {
+        "chance": 90,
+        "item": "Рубин Ур.4",
+      },
+    ],
+  },
+}
+`;

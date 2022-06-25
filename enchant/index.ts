@@ -3,17 +3,17 @@ import { agathionEnchantMap, highQualityAgathionEnchantMap, upToHighQualityAgath
 import { benirEnchantMap } from './benir';
 import { bopEnchantMap } from './bop';
 import { broochEnchantMap } from './brooch';
-import { chocolateEnchantMap } from './chocolate';
 import { cloakEnchantMap } from './cloak';
 import { dragonBeltEnchantMap } from './dragon-belt';
 import { dragonPendantEnchantMap } from './dragon-pendant';
 import { dyeEnchantMap } from './dye';
+import { eventChocolateEnchantMap } from './event-chocolate';
 import { eventDragonSlayerEnchantMap } from './event-dragon-slayer';
 import { hatEnchantMap } from './hat';
 import { heroCrownEnchantMap } from './hero-crown';
 import { ignisNecklaceEnchantMap } from './ignis-necklace';
 import { rubyEnchantMap } from './ruby';
-import { bigRubyEnchantMap } from './ruby-big';
+import { rubyBigEnchantMap } from './ruby-big';
 import { runeAdenEnchantMap } from './rune-aden';
 import { runeHardinEnchantMap } from './rune-hardin';
 import { talismanOfAdenEnchantMap } from './talisman-of-aden';
@@ -24,10 +24,10 @@ import { talismanOfInsolenceEnchantMap } from './talisman-of-insolence';
 export const enchants: EnchantMap = new Map([
   ...agathionEnchantMap,
   ...benirEnchantMap,
-  ...bigRubyEnchantMap,
+  ...rubyBigEnchantMap,
   ...bopEnchantMap,
   ...broochEnchantMap,
-  ...chocolateEnchantMap,
+  ...eventChocolateEnchantMap,
   ...cloakEnchantMap,
   ...dragonBeltEnchantMap,
   ...dragonPendantEnchantMap,
