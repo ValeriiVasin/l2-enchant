@@ -4,8 +4,15 @@ import { EnchantStrategy } from '../types';
 
 interface Config {
   strategy: EnchantStrategy;
+  /**
+   * Enchant chances. Numbers in range (0..100]
+   */
   chances: number[];
   items: Item[];
+  /**
+   * Cost of enchant
+   * @default Item.Nothing
+   */
   enchantItem?: Item;
 }
 
