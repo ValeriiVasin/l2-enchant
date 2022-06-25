@@ -108,7 +108,82 @@ Map {
 }
 `;
 
-exports[`create enchant map Drop strategy 1`] = `
+exports[`create enchant map Drop strategy drops to boundaries 1`] = `
+Map {
+  "Талисман Бенира Ур.1" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.1",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.2",
+      },
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.2" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.2",
+    "results": Array [
+      Object {
+        "chance": 45,
+        "item": "Талисман Бенира Ур.3",
+      },
+      Object {
+        "chance": 55,
+        "item": "Талисман Бенира Ур.1",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.3" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.3",
+    "results": Array [
+      Object {
+        "chance": 40,
+        "item": "Талисман Бенира Ур.4",
+      },
+      Object {
+        "chance": 60,
+        "item": "Талисман Бенира Ур.3",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.4" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.4",
+    "results": Array [
+      Object {
+        "chance": 35,
+        "item": "Талисман Бенира Ур.5",
+      },
+      Object {
+        "chance": 65,
+        "item": "Талисман Бенира Ур.3",
+      },
+    ],
+  },
+  "Талисман Бенира Ур.5" => Object {
+    "cost": "Осколок Талисмана Бенира",
+    "item": "Талисман Бенира Ур.5",
+    "results": Array [
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.6",
+      },
+      Object {
+        "chance": 50,
+        "item": "Талисман Бенира Ур.5",
+      },
+    ],
+  },
+}
+`;
+
+exports[`create enchant map Drop strategy drops to first element 1`] = `
 Map {
   "Талисман Бенира Ур.1" => Object {
     "cost": "Осколок Талисмана Бенира",

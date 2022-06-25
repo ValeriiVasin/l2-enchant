@@ -37,15 +37,29 @@ describe('create enchant map', () => {
     ).toMatchSnapshot();
   });
 
-  it('Drop strategy', () => {
-    expect(
-      createEnchantMap({
-        strategy: EnchantStrategy.Drop,
-        enchantItem: Item.BenirEnchantItem,
-        items: [Item.Benir_1, Item.Benir_2, Item.Benir_3, Item.Benir_4, Item.Benir_5, Item.Benir_6],
-        chances: [50, 45, 40, 35, 50],
-      }),
-    ).toMatchSnapshot();
+  describe('Drop strategy', () => {
+    it('drops to first element', () => {
+      expect(
+        createEnchantMap({
+          strategy: EnchantStrategy.Drop,
+          enchantItem: Item.BenirEnchantItem,
+          items: [Item.Benir_1, Item.Benir_2, Item.Benir_3, Item.Benir_4, Item.Benir_5, Item.Benir_6],
+          chances: [50, 45, 40, 35, 50],
+        }),
+      ).toMatchSnapshot();
+    });
+
+    it('drops to boundaries', () => {
+      expect(
+        createEnchantMap({
+          strategy: EnchantStrategy.Drop,
+          enchantItem: Item.BenirEnchantItem,
+          items: [Item.Benir_1, Item.Benir_2, Item.Benir_3, Item.Benir_4, Item.Benir_5, Item.Benir_6],
+          chances: [50, 45, 40, 35, 50],
+          boundaries: new Set([Item.Benir_3, Item.Benir_5]),
+        }),
+      ).toMatchSnapshot();
+    });
   });
 
   it('TwoToOne strategy', () => {
