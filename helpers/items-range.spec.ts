@@ -4,7 +4,7 @@ import { itemsRange } from './items-range';
 describe('items range', () => {
   it('throws when same item is provided', () => {
     const wrapper = () => itemsRange(Item.Agathion, Item.Agathion);
-    expect(wrapper).toThrowError('Items in range should be distinct');
+    expect(wrapper).toThrowError('Low item in range should have lower level and/or lower enchant');
   });
 
   it('throws when items having different base', () => {
@@ -14,12 +14,12 @@ describe('items range', () => {
 
   it('throws if low item level is greater than high', () => {
     const wrapper = () => itemsRange(Item.RuneAden_20, Item.RuneAden_19);
-    expect(wrapper).toThrowError('Low item level in range should be less or equal than higher one');
+    expect(wrapper).toThrowError('Low item in range should have lower level and/or lower enchant');
   });
 
   it('throws if low item is more enchanted than high and levels are the same', () => {
     const wrapper = () => itemsRange(Item.Agathion_1, Item.Agathion);
-    expect(wrapper).toThrowError('Low item in range should be less enchanted than high');
+    expect(wrapper).toThrowError('Low item in range should have lower level and/or lower enchant');
   });
 
   describe('items with item level', () => {
@@ -31,7 +31,7 @@ describe('items range', () => {
       expect(itemsRange(Item.RuneAden_1, Item.RuneAden_3)).toEqual([Item.RuneAden_1, Item.RuneAden_2, Item.RuneAden_3]);
     });
 
-    it('result is properly sorted', () => {
+    it('result is properly so rted', () => {
       expect(itemsRange(Item.RuneAden_9, Item.RuneAden_11)).toEqual([
         Item.RuneAden_9,
         Item.RuneAden_10,

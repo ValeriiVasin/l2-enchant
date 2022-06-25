@@ -1,4 +1,4 @@
-import { parseItem } from './parse-item';
+import { parseItem } from '../parse-item';
 
 const compare = (left: number, right: number): number => {
   if (left === right) {

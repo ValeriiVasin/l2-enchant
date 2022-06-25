@@ -1,4 +1,4 @@
-import { compareItems } from './compare-items';
+import { compareItems } from '../compare-items/compare-items';
 
 describe('compare items', () => {
   describe('different base', () => {

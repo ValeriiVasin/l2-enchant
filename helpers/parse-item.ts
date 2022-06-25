@@ -1,3 +1,5 @@
+import type { ParsedItem } from '../types';
+
 const levelRegexp = /Ур.(\d+)/;
 const parseLevel = (item: string): number => {
   const match = item.match(levelRegexp);
@@ -14,6 +16,6 @@ const parseBase = (item: string): string => {
   return item.replace(levelRegexp, '').replace(enchantRegexp, '').trim();
 };
 
-export function parseItem(item: string): { base: string; level: number; enchant: number } {
+export function parseItem(item: string): ParsedItem {
   return { base: parseBase(item), level: parseLevel(item), enchant: parseEnchant(item) };
 }
