@@ -188,6 +188,7 @@ export enum Item {
 
   AgathionCoupon = 'Билет Обмена Агатиона',
   AgathionEnchantScroll = 'Свиток: Модифицировать Агатиона',
+  StableScrollEnchantAgathion = 'Стабильный Свиток: Модифицировать Агатиона',
   Agathion = 'Агатион',
   Agathion_1 = 'Агатион +1',
   Agathion_2 = 'Агатион +2',
