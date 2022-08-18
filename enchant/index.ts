@@ -9,6 +9,7 @@ import { dragonPendantEnchantMap } from './dragon-pendant';
 import { dyeEnchantMap } from './dye';
 import { eventChocolateEnchantMap } from './event-chocolate';
 import { eventDragonSlayerEnchantMap } from './event-dragon-slayer';
+import { growthRuneEnchantMap } from './growth-rune';
 import { hatEnchantMap } from './hat';
 import { heroCrownEnchantMap } from './hero-crown';
 import { ignisNecklaceEnchantMap } from './ignis-necklace';
@@ -24,18 +25,19 @@ import { talismanOfInsolenceEnchantMap } from './talisman-of-insolence';
 export const enchants = mergeEnchantMaps([
   agathionEnchantMap,
   benirEnchantMap,
-  rubyBigEnchantMap,
   bopEnchantMap,
   broochEnchantMap,
-  eventChocolateEnchantMap,
   cloakEnchantMap,
   dragonBeltEnchantMap,
   dragonPendantEnchantMap,
   dyeEnchantMap,
+  eventChocolateEnchantMap,
   eventDragonSlayerEnchantMap,
+  growthRuneEnchantMap,
   hatEnchantMap,
   heroCrownEnchantMap,
   ignisNecklaceEnchantMap,
+  rubyBigEnchantMap,
   rubyEnchantMap,
   runeAdenEnchantMap,
   runeHardinEnchantMap,
