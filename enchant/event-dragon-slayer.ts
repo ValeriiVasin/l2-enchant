@@ -7,6 +7,6 @@ import { EnchantStrategy } from '../types';
 export const eventDragonSlayerEnchantMap = createEnchantMap({
   strategy: EnchantStrategy.Destroy,
   enchantItem: Item.EventEnchantDragonSlayer,
-  chances: [100, 100, 100, ...Array(12).fill(70)],
-  items: itemsRange(Item.EventDragonSlayerSword, Item.EventDragonSlayerSword_15),
+  chances: [100, 100, 100, ...Array(12).fill(70), 35, 20],
+  items: itemsRange(Item.EventDragonSlayerSword, Item.EventDragonSlayerSword_17),
 });

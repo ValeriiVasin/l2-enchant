@@ -279,6 +279,8 @@ export enum Item {
   EventDragonSlayerSword_13 = 'Меч Убийца Драконов +13',
   EventDragonSlayerSword_14 = 'Меч Убийца Драконов +14',
   EventDragonSlayerSword_15 = 'Меч Убийца Драконов +15',
+  EventDragonSlayerSword_16 = 'Меч Убийца Драконов +16',
+  EventDragonSlayerSword_17 = 'Меч Убийца Драконов +17',
 
   Brooch_1 = 'Брошь Ур.1',
   Brooch_2 = 'Брошь Ур.2',
