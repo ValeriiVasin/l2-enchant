@@ -3,6 +3,10 @@ import { itemsRange } from '../helpers/items-range';
 import { Item } from '../items';
 import { EnchantStrategy } from '../types';
 
+// Chances 10+:
+// https://discord.com/channels/351703230499258372/351703230499258373/988409582667845672
+// Chances below 10 were verified in-game
+
 export const growthRuneEnchantMap = createEnchantMap({
   strategy: EnchantStrategy.Drop,
   enchantItem: Item.GrowthRuneFragment,
