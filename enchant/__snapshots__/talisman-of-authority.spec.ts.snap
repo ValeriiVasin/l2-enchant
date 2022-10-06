@@ -147,11 +147,11 @@ Map {
     "item": "Талисман Властителя Ур.11",
     "results": Array [
       Object {
-        "chance": 30,
+        "chance": 40,
         "item": "Талисман Властителя Ур.12",
       },
       Object {
-        "chance": 70,
+        "chance": 60,
         "item": "Талисман Властителя Ур.11",
       },
     ],
@@ -161,11 +161,11 @@ Map {
     "item": "Талисман Властителя Ур.12",
     "results": Array [
       Object {
-        "chance": 25,
+        "chance": 30,
         "item": "Талисман Властителя Ур.13",
       },
       Object {
-        "chance": 75,
+        "chance": 70,
         "item": "Талисман Властителя Ур.11",
       },
     ],
