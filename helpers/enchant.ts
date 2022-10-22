@@ -1,9 +1,9 @@
-import { enchants } from '../enchant';
 import { Item } from '../items';
+import type { EnchantMap } from '../types';
 import { mergeMaps } from './merge-maps';
 import { pickEnchantResult } from './pick-enchant-result';
 
-export const enchant = (from: Item, to: Item, times = 1000, enchantMap = enchants): Map<Item, number> => {
+export const enchant = (from: Item, to: Item, times = 1000, enchantMap: EnchantMap): Map<Item, number> => {
   let used = new Map<Item, number>();
 
   for (let i = 0; i < times; i++) {
