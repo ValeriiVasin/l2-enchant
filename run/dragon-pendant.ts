@@ -30,6 +30,7 @@
 Подвеска Дракона Ур.3 => Подвеска Дракона Ур.3 +5 Map { 'Подвеска Дракона Ур.3' => 1, 'Лак Дракона' => 3423 }
  */
 
+import { dragonPendantEnchantMap } from '../enchant/dragon-pendant';
 import { header } from '../helpers/header';
 import { itemsRange } from '../helpers/items-range';
 import { run } from '../helpers/run';
@@ -38,12 +39,22 @@ import { Item } from '../items';
 const times = 100_000;
 
 console.log(header('Подвеска Дракона Ур.1'));
-run(Item.DragonPendantOne, itemsRange(Item.DragonPendantOne_1, Item.DragonPendantTwo), times);
+run(Item.DragonPendantOne, itemsRange(Item.DragonPendantOne_1, Item.DragonPendantTwo), times, dragonPendantEnchantMap);
 
 console.log();
 console.log(header('Подвеска Дракона Ур.2'));
-run(Item.DragonPendantTwo, itemsRange(Item.DragonPendantTwo_1, Item.DragonPendantThree), times);
+run(
+  Item.DragonPendantTwo,
+  itemsRange(Item.DragonPendantTwo_1, Item.DragonPendantThree),
+  times,
+  dragonPendantEnchantMap,
+);
 
 console.log();
 console.log(header('Подвеска Дракона Ур.3'));
-run(Item.DragonPendantThree, itemsRange(Item.DragonPendantThree_1, Item.DragonPendantThree_5), times);
+run(
+  Item.DragonPendantThree,
+  itemsRange(Item.DragonPendantThree_1, Item.DragonPendantThree_5),
+  times,
+  dragonPendantEnchantMap,
+);

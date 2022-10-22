@@ -5,7 +5,7 @@ import { resolveItems } from './resolve-items';
 import { roundMap } from './round-map';
 
 interface RunnerFn {
-  (from: Item, to: Item[], times: number, enchantMap?: EnchantMap): void;
+  (from: Item, to: Item[], times: number, enchantMap: EnchantMap): void;
 }
 
 const runFast: RunnerFn = (from, to, times, enchantMap) => {
